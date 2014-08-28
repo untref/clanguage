@@ -39,7 +39,8 @@ int main(int argc, char** argv) {
   printf("sizeof p long long:     %d %s\n",                sizeof(pll), units );                      // 4 bytes
   printf("sizeof p long double:   %d %s\n",                sizeof(pld), units );                      // 4 bytes
 
-  printf("%d\n" ,sizeof( 2.7 + 1 ));
+  printf("%d\n" ,sizeof(char*));
+  printf("%d\n" ,sizeof(void*));
   return 0;
 }
 
