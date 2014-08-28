@@ -14,6 +14,10 @@ int main(int argc, char**argv ) {
   // All this forms are equivalent
   printf("Array direction: 0x%x, 0x%x, 0x%x\n", cArray, &cArray, &cArray[0] );
 
+  for( int i = 0; i < sizeof(iArray) / sizeof(int); ++i ) {
+    printf("elemento: %02d valor: %2d, %2d\n", i, iArray[i], *(iArray+i) );
+  }
+
   char* first = cArray;
   printf("First element: 0x%x, %c\n", first, *first );
 
