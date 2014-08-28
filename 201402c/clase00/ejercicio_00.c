@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /************
  * Ejercicio próxima clase 
  *  Instalar entorno y experimentar con printf (%d, %f, \n \", etc.)
@@ -12,9 +14,10 @@
  */
 
 int main(int argc, char* argv[] ) {
-  // Aquí código
-  // ...
-  // ...
+  printf("Aquí está el caracter en cuestión: \"\n");
+  printf("Aquí está el caracter en cuestión: \%\n");
+
+  printf("Valores, %d, %04d, %04d, %1.4f: \n", 1, 2, 4, 1.6180);
   
   return 0;
 }
