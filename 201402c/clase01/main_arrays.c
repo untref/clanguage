@@ -28,6 +28,16 @@ int main(int argc, char**argv ) {
 
   // WARNING!!!!
   func( iArray );
+  
+
+  char a[] = "hola";
+  char* pa = a;
+
+  while ( *pa++ != 0 ) ;
+
+  printf( "length: %d\n", pa - a);
+
+
 
 	return 0; 
 } 
