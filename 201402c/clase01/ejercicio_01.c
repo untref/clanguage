@@ -47,7 +47,7 @@ int main(int argc, char* argv[] ) {
   // Escribir un único código que funcione para ambos arrays.
   //
   // SUGERENCIAS
-  //  Utilizar void*
+  //  Utilizar char*
   //
   
   
