@@ -73,9 +73,14 @@ int main(int argc, char* argv[] ) {
   // 
   // Dado que el código del ejercicio 0 y 2 son prácticamente el mismo. 
   // Escribir un único código que funcione para ambos arrays.
+  // 
+  // La idea de este ejercicio es que puedan escribir un código que sea independiente del array 
+  // que se esté utilizando.  Al fin y al cabo cualquiera sea el array se trata de un conjunto
+  // de bytes consecutivos. Entonces para copiar contenidos entre arrays vastaría con copiar 
+  // tantos bytes como elementos * tamaño del elemento contenga el array.
   //
   // SUGERENCIAS
-  //  Utilizar void*
+  //  Utilizar char*
   //
   long double otrosFlotantes[] = { 3.141516, 1.65};
   long double otrosMasFlotantes[sizeof(otrosFlotantes) / sizeof(long double)];
