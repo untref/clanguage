@@ -26,8 +26,8 @@ int main(int argc, char* argv[] ) {
 
   // EJERCICIO 3
   // Dado un array de números (signed int, unsigned int, float, double, unsigend short ) implementar de 
-  // manera genéria el método 'inject'
-  // 
+  // el acumulado de todos los valores de la collection. 
+  //
   // 
 
   return 0;
