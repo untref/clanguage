@@ -7,7 +7,8 @@ int main(int argc, char** argv) {
   printf( "Floating point: %f\n", f );
 
   // Checkout the output...
-  for( int i = 0; i < sizeof(f); ++i ) {
+  int i;
+  for( i = 0; i < sizeof(f); ++i ) {
     printf( "%x\n", p[i] );
   }
 
