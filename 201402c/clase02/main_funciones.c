@@ -15,8 +15,8 @@ double average(double a, double b) {
 
 double average2( double* values, unsigned count ) {
   double acum = 0;
-
-  for( unsigned i = 0; i < count; ++i ) {
+  unsigned i;
+  for( i = 0; i < count; ++i ) {
     acum += values[i];
   }
 
@@ -29,13 +29,15 @@ void print(void* value) {
 }
 
 void iterate(double* values, unsigned count, void (doit)(void*) ) {
-  for( unsigned i = 0; i < count; ++i ) {
+  unsigned i;
+  for( i = 0; i < count; ++i ) {
     (*doit)(values+i);
   }
 }
 
 void iterate2(void* values, unsigned sizeOfEach, unsigned count, void (doit)(void*) ) {
-  for( unsigned i = 0; i < count; ++i ) {
+  unsigned i;
+  for( i = 0; i < count; ++i ) {
     (*doit)( values + i * sizeOfEach );
   }
 }
