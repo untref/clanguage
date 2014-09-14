@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1410653501 source:/Users/diego/development/untref/algo3/201402c/TP0/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Variant.h"
+
+1410653281 /Users/diego/development/untref/algo3/201402c/TP0/Variant.h
+
+1410653525 source:/Users/diego/development/untref/algo3/201402c/TP0/Variant.c
+	"Variant.h"
+
