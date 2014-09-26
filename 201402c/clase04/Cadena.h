@@ -2,6 +2,8 @@
 #define __CADENA_H__
 
 typedef struct _cadena {
+  char* data;
+  unsigned length;
 } Cadena;
 
 /***
@@ -12,6 +14,10 @@ typedef struct _cadena {
  * @return  cadena inicializada (la misma que recibe)
  */
 Cadena* inicializar( Cadena* cadena);
+
+void liberar(Cadena* cadena);
+
+const char* devolverStr(Cadena* c);
 
 /***
  * Modifica la cadena de caracteres alacenada por la cadena
@@ -31,7 +37,7 @@ Cadena* modificar(Cadena* c, const char* dato);
  *
  * @return  cadena modificada (la misma que recibe)
  */
-Cadena* revertir(Cadena* c);
+// Cadena* revertir(Cadena* c);
 
 /***
  * Coloca la cadena en mayusculas
@@ -41,7 +47,7 @@ Cadena* revertir(Cadena* c);
  * @return  cadena modificada (la misma que recibe)
  *
  */
-Cadena* mayusculas(Cadena* c);
+// Cadena* mayusculas(Cadena* c);
 
 /***
  * Devuelve 1 si la cadena es un palindromo, sino 0
@@ -52,7 +58,7 @@ Cadena* mayusculas(Cadena* c);
  *          1: La cadena es un palindromo
  *
  */
-char esPalindromo(Cadena* c);
+// char esPalindromo(Cadena* c);
 
 /***
  * Concatena dato en cadena 
@@ -85,7 +91,7 @@ Cadena* concatenarCadena(Cadena* dest, Cadena* origen);
  * @return          cadena duplicada
  *
  */
-Cadena* duplicar(Cadena* origen, Cadena* destino);
+// Cadena* duplicar(Cadena* origen, Cadena* destino);
 
 /***
  * Asignar cadenas
@@ -98,7 +104,7 @@ Cadena* duplicar(Cadena* origen, Cadena* destino);
  * @return          cadena destino
  *
  */
-Cadena* asignar(Cadena* origen, Cadena* destino);
+// Cadena* asignar(Cadena* origen, Cadena* destino);
 
 
 #endif
