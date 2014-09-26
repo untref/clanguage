@@ -63,4 +63,33 @@ double getDouble( Variant* );
  */
 char* getString( Variant* );
 
+/***
+ * Dado un variant origen, lo copio a un variant destino.
+ *
+ * El resultado de esta asignación va a ser un variant independiente
+ * del que se uso como origen.  por tanto si modifico el nuevo
+ * el viejo no se verá afectado.
+ *
+ * @param org     Variant origen
+ * @param dst     Variant destino
+ *
+ * @precondicion  Ambos estructuras variants estan inicializadas
+ */
+void assign(Variant* dst, Variant* org);
+
+/***
+ * Crear un variant a partir de uno que ya existe
+ *
+ * El resultado de esto será una nueva variable
+ * variant almacenada en el heap, quien solicito esto  deberá 
+ * liberarla
+ *
+ * @param org     Variant origen
+ *
+ * @return        puntero a nuevo variant
+ *
+ * @precondicion  La estructura variant esta inicializada
+ */
+Variant* duplicate(Variant* org);
+
 #endif // __VARIANT_H__
