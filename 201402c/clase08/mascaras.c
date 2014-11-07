@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#if 0
 unsigned toggleBit(unsigned field, unsigned bit ) {
   return field ^ (0x1 << bit);
 }
@@ -15,6 +16,7 @@ unsigned setBit(unsigned field, unsigned bit ) {
 unsigned unSetBit(unsigned field, unsigned bit ) {
   return field & ( 0xffffff ^ 0x1 << bit);
 }
+#endif 
 
 /****
  * Ejemplo de utilización de máscaras:
