@@ -1,90 +1,88 @@
+#include "garbage_collector.hh"
+
 #include <iostream>
-#include <cstdlib>
 #include <cstring>
 
-class Puntero {
-  public:
-    Puntero() {
-      std::cout << "Constructor defecto" << std::endl;
-      this->ptr = 0;
-      this->cnt = 1;
-    }
 
-    Puntero(void * ptr) {
-      std::cout << "Constructor param" << std::endl;
-      this->ptr = ptr;
-      this->cnt = 1;
-    }
+void Puntero::setValor( unsigned v ) {
+    memcpy( this->ptr, &v, sizeof(v) );
 
-    Puntero(const Puntero& o ) {
-      this->cnt = o.cnt + 1;
-      this->ptr = o.ptr;
-      std::cout << "Constructor copia, ref: " << this->cnt << std::endl;
-    }
+  }
 
-    Puntero& operator=(const Puntero& o ) {
-
-      if ( this->ptr ) free(this->ptr);
-
-      this->ptr = o.ptr;
-      this->cnt = o.cnt++;
-
-      std::cout << "Operator Igual ref: " << o.cnt << std::endl;
-
-    }
-
-    ~Puntero() {
-      this->cnt--;
-      std::cout << "Destructor ref " << this->cnt << std::endl;
-      if ( this->cnt == 0 && this->ptr ) {
-        std::cout << "free " << std::endl;
-        free( this->ptr );
-      }
-      this->ptr = 0;
-    }
-
-    void setValor( unsigned v ) {
-      memcpy( this->ptr, &v, sizeof(v) );
-
-    }
-
-    unsigned getValor() {
-      return *((unsigned*)this->ptr);
-    }
-
-  private:
-   void* ptr; 
-   mutable unsigned cnt;
-};
-
-
-
-void otraLlamada( Puntero p0 ) {
-  std::cout << "otraLlamada" << std::endl;
-  p0.setValor(75);
+unsigned Puntero::getValor() {
+    return *((unsigned*)this->ptr);
 }
 
-void llamarPuntero( Puntero p0 ) {
-  std::cout << "llamarPuntero" << std::endl;
-  otraLlamada( p0 );
+Puntero::Puntero() : ptr(0), referencias(0){ 
+  incRef();
 }
 
+Puntero::Puntero(void * ptr) : ptr(ptr), referencias(0){
+  incRef();
+ }
 
+Puntero::Puntero(const Puntero& o ) {
+  this->ptr = o.ptr;
+  this->referencias = o.referencias;
 
-int main(int argc, char** argv) {
-  Puntero r;
-  Puntero q;
-  Puntero p( malloc(sizeof(int)) );
+  incRef();
 
-  q = p;
-  r = p;
+  std::cout << "Constructor de copia: " << (*this->referencias) << std::endl;
+}
 
-  /*
-  q.setValor( 35 );
+Puntero::~Puntero() {
+  if ( decRef() == 0 && this->ptr ) {
+    liberar();
+  }
+}
 
-  llamarPuntero( p );
+Puntero& Puntero::operator=(const Puntero& o ) {
+  if ( this == &o )
+    return *this;
 
-  std::cout << q.getValor() << std::endl;
-  */
+  // El puntero this no tiene otra referencia que lo esté 
+  // apuntando
+  if ( decRef() == 0 ) {
+    liberar();
+  }
 
+  this->ptr = o.ptr;
+  this->referencias = o.referencias;
+  incRef();
+
+  return *this;
+
+}
+
+void Puntero::liberar() {
+  if ( this->ptr == 0)
+    return;
+
+  std::cout << "free " << std::endl;
+  free( this->ptr );
+  this->ptr = 0;
+}
+
+unsigned Puntero::incRef() {
+  if ( this->referencias == 0 ) {
+    std::cout << "creo entero" << std::endl;
+    this->referencias = (unsigned*)malloc(sizeof(unsigned));
+    (*this->referencias) = 0;
+  }
+
+  return ++(*this->referencias);
+}
+
+unsigned Puntero::decRef() {
+  unsigned result = --(*this->referencias);
+
+  // El puntero this no tiene otra referencia que lo esté 
+  // apuntando
+  if ( result == 0) {
+    std::cout << "Destruyo entero" << std::endl;
+    free(this->referencias);
+    this->referencias = 0;
+  }
+
+  return result;
 }
