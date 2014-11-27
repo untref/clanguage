@@ -19,6 +19,19 @@ public:
 		setNombre( other.nombre);
 	}
 
+  Atributo& operator=(const Atributo&  o) {
+    if ( &o == this ) {
+      return *this;
+
+    }
+		std::cout << "Operador igual " << o.nombre << std::endl;		
+    
+    setNombre(o.nombre);
+
+
+    return *this;
+  }
+
 	~Atributo() {
 		std::cout << "Destructor: " << nombre << std::endl;
 		if (nombre)
@@ -63,9 +76,8 @@ int main(int argc, char const *argv[])
 	Atributo contenido("contenido");
 	Atributo unidades("bytes");
 
-	// Forzando la ejecución del constructor de copia
-	// functionConReferencia( contenido);
-	functionSinReferencia( contenido);
+  unidades = unidades;
+  unidades = contenido = unidades;
 
 
 	return 0;
