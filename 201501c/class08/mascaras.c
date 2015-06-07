@@ -14,7 +14,7 @@ unsigned setBit(unsigned field, unsigned bit ) {
 }
 
 unsigned unSetBit(unsigned field, unsigned bit ) {
-  return field & ( 0xffffff ^ 0x1 << bit);
+  return ~ ( 0x1 << bit) & field;
 }
 #endif 
 
