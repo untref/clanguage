@@ -2,3 +2,6 @@
 *.out
 *.sw*
 *.exe
+*.stackdump
+*.depend
+*.layout
