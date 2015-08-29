@@ -1,4 +1,4 @@
-#include <stdio.h>
+  #include <stdio.h>
 #include <stdlib.h>
 
 #include "../../assertion.h"
@@ -53,6 +53,11 @@ int main()
       numeros[1] = tmp;
       assert(numeros[1], 4.2);
 
+
+      // IMPORTANTE
+      //
+      // En función de la arquitectura el tamaño de un puntero puede ser 4 u 8
+      //
       // Cual es el tamano de un puntero a double (el tamano del double es 8)?
       assert(sizeof(double*), 4);
 
@@ -75,15 +80,19 @@ int main()
       assert(pi, NULL);
 
       pi = pi + 2; // equivalents to pi += 2
-/*
-      printf("dir i: 0x%x\n", &i);
-      printf("dir j: 0x%x\n", &j);
-      printf("dir pi: 0x%x\n", pi);
-      printf(".....\n");
-      //printf("pi: d\n", *pi);
-*/
+
+      // IMPORTANTE
+      // Si bien estamos operando con el puntero y este se incrementará
+      // aunque la dirección no sea válida podemos hacer todas las operaciones
+      // correspondientes a aritmética de punteros. Mientras no lo dereferenciemos!!!!
+      // No hacer *pi!
+
+      assert(pi, 0x8);
+
+      // Aquí pi apunta a la dirección de j
       pi = &j;
 
+      #if 0
       printf("dir i: 0x%x\n", &i);
       printf("dir j: 0x%x\n", &j);
       printf("dir pi: 0x%x\n", &pi);
@@ -91,9 +100,14 @@ int main()
       printf("dval pi: %d\n", *pi);
       printf("pi: %d\n", *pi);
       printf(".....\n");
+      #endif
 
+      // En esta linea lo único que importa es que
+      // pi se incrementará en sizeof(int), apuntando a la siguiente
+      // poscion de memoria contigüa a &j (4 bytes más allá de &j)
       *pi++;
 
+      // Mapa de memoria
       printf("dir i: 0x%x\n", &i);
       printf("dir j: 0x%x\n", &j);
       printf("dir pi: 0x%x\n", &pi);
