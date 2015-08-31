@@ -3,5 +3,6 @@
 	<Workspace title="Workspace">
 		<Project filename="class/class02.cbp" />
 		<Project filename="ejercicios/ejercicio.cbp" />
+		<Project filename="swapStrings/Desafio.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
