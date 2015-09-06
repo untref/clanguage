@@ -3,9 +3,12 @@
 
 #include "../../assertion.h"
 
-// Definir función para intercambiar el contenido de dos strings
-void swapStr(....) {
+void swapStr(char** a, char**b )  {
+    char* tmp = *a;
+    *a = *b;
+    *b = tmp;
 }
+
 int main()
 {
     char str01[] = "str01";
@@ -14,7 +17,7 @@ int main()
     assertStr(str01, "str01");
     assertStr(str02, "str02");
 
-    swapStr(str01, str02);
+    swapStr(&str01, &str02);
 
     assertStr(str02, "str01");
     assertStr(str01, "str02");
