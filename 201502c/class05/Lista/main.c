@@ -19,5 +19,7 @@ int main()
     printf("%d\n", *(int*)current->data);
     current = lista_at(&lista, 1);
     printf("%f\n", *(float*)current->data);
+
+    lista_free(&lista);
     return 0;
 }

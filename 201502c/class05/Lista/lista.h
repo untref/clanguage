@@ -15,4 +15,5 @@ const Node* lista_push(Node*this, const void* data, unsigned size);
 
 const Node* lista_at(Node* this, unsigned pos);
 
+Node* lista_free(Node* this);
 #endif // LISTA_H_INCLUDED
