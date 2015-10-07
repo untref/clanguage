@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "../../assertion.h"\
+#include "../../assertion.h"
 
 #include "matriz.h"
 

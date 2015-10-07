@@ -4,5 +4,7 @@
 		<Project filename="ejercicio_integrador_0/ejercicio_integrador_0.cbp" />
 		<Project filename="Lista/Lista.cbp" />
 		<Project filename="class/class05.cbp" />
+		<Project filename="ejercicio_integrador_1/ejercicio_integrador_1.cbp" />
+		<Project filename="cadena/cadena.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
