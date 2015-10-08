@@ -17,19 +17,17 @@ void matriz_free(Matriz* this) {
     this->elementCount = 0;
 };
 
+int* matriz_offset(Matriz* this, unsigned row, unsigned col) {
+    return (this->elements + row * this->elementCount * sizeof(int)) + (col * sizeof(int));
+}
+
 void matriz_set_at(Matriz* this, unsigned row, unsigned col, int value) {
-    // Completar con el codigo que hacen funcionar los tests
-    //
-    // Ayuda: Como los punteros son enteros se pueden sumar, restar
-    // multiplicar.
+    int * e = matriz_offset(this, row, col);
+    *e = value;
     return;
 }
 
 int matriz_at(Matriz* this, unsigned row, unsigned col) {
-    // Completar con el codigo que hacen funcionar los tests
-    //
-    // Ayuda: Como los punteros son enteros se pueden sumar, restar
-    // multiplicar.
-
-    return 0;
+    int * e = matriz_offset(this, row, col);
+    return *e;
 };
