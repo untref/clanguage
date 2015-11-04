@@ -4,5 +4,9 @@
 		<Project filename="vector/vector.cbp" />
 		<Project filename="class/class.cbp" />
 		<Project filename="puntero/puntero.cbp" />
+		<Project filename="MapaBits/MapaBits.cbp" />
+		<Project filename="Variant/Variant.cbp" />
+		<Project filename="repaso_01/repaso_01.cbp" />
+		<Project filename="repaso_02/repaso_02.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
