@@ -4,9 +4,9 @@ Aquí encontrarán un conjunto de ejercicios para la materia
 
 **En construcción...**
 
-### Guia 1
+### [Guia 1][1]
 
-[Tema 1][1]
+Configuración de entorno y utilización de salida standard
 
 ### Guia 2
 
