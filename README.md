@@ -1,5 +1,15 @@
-### Errores comunes
-## Punteros
+# Algoritmos y programación III / Lenguajes de Programación III
+## Home page
+
+Aquí encontraran noticias, encuestas y actividades que se llevan a cabo durante el cuatrimestre: [algo3untref][1]
+
+## Hall of Fame
+Inauguramos esta nueva sección con el fin de que los alumnos que se han esmerado en la construcción de su TP Final tengan un reconocimiento (más allá del triunfo que implica haber aprendido el contenido que se dicta en la materia)
+
+[HallOfFame][2]
+
+## Errores comunes
+### Punteros
 1. Cuando paso un array por parámetro, este parámetro es un puntero al inicio del array
 ```
   void imprimir(char param[]) { // Esto es equivalente a 'void imprimir(char* param)'
@@ -35,3 +45,5 @@ char* worngCopy(char* orig) {
 ```
 *IMPORTANTE*: ```worngCopy``` devuelve un puntero a la variable ```result``` que se destruirá luego de que finalice la invoación de la función ```worngCopy```
 
+[1]: https://sites.google.com/site/algo3untref
+[2]: https://github.com/untref/clanguage/hallOfFame
