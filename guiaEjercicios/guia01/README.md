@@ -45,4 +45,4 @@ Imprimir las siguientes cadenas: "Hola", "Untref" y argv[0], dejando una linea e
 
 3. Calcular las raíces del siguiente polinomio:  12\*X\*X + 25\*X + 7.
 
-4. Calcular las raíces del siguiente polinomio:  -1*X\*X - 2. 
+4. Calcular las raíces del siguiente polinomio:  -1\*X\*X - 2.
