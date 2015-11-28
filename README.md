@@ -3,10 +3,12 @@
 
 Aquí encontraran noticias, encuestas y actividades que se llevan a cabo durante el cuatrimestre: [algo3untref][1]
 
-## Hall of Fame
+## [Hall of Fame][2]
 Inauguramos esta nueva sección con el fin de que los alumnos que se han esmerado en la construcción de su TP Final tengan un reconocimiento (más allá del triunfo que implica haber aprendido el contenido que se dicta en la materia)
 
-[HallOfFame][2]
+## [Guias de ejercicios][3]
+
+Guía de ejercicios para aplicar conceptos cubiertos en clase
 
 ## Errores comunes
 ### Punteros
@@ -46,4 +48,5 @@ char* worngCopy(char* orig) {
 *IMPORTANTE*: ```worngCopy``` devuelve un puntero a la variable ```result``` que se destruirá luego de que finalice la invoación de la función ```worngCopy```
 
 [1]: https://sites.google.com/site/algo3untref
-[2]: https://github.com/untref/clanguage/hallOfFame
+[2]: hallOfFame/
+[3]: guiaEjercicios/
