@@ -1,6 +1,4 @@
-## Guia 01
-
-Configuración de entorno y utilización de salida standard
+## Guia 01 - Configuración de entorno y utilización de salida standard
 
 ### Ejercicio 1
 
@@ -46,3 +44,10 @@ Imprimir las siguientes cadenas: "Hola", "Untref" y argv[0], dejando una linea e
 3. Calcular las raíces del siguiente polinomio:  12\*X\*X + 25\*X + 7.
 
 4. Calcular las raíces del siguiente polinomio:  -1\*X\*X - 2.
+
+### Ejercicio 4 - Macros
+
+1. Definir una macro para calcular el mínimo entre dos números
+
+2. Definir una macro para calcular el máximo entre dos números
+
