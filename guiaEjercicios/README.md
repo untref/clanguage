@@ -12,5 +12,15 @@ Configuración de entorno y utilización de salida standard
 
 Array y punteros
 
+### [Guia 4][4]
+
+TDA
+
+### [Guia 6][6]
+
+C++
+
 [1]: guia01/
 [2]: guia02/
+[4]: guia04/
+[6]: guia06/
