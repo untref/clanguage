@@ -1,105 +1,72 @@
-## Guia 02 - Arrays y punteros
+## Guia 02 - Arrays
 
 ### Ejercicio 1
-
-Sin modificar los assert, modificar el código de forma tal que los tests pasen:
-
-```
-int main()
-{
-    int i = 29;
-    int j = 50;
-
-    int* direccionI = 0;
-    int* direccionJ = 0;
-
-    assert( *direccionJ, j);
-    assert( *direccionI, i);
-
-    assert( 29, j);
-    assert( 50, i);
-
-    // Sin asignar nuevos valores a i o j ni
-    // utilizar constantes literales;
-    // intercambiar los valores de i y j
-
-    // codigo aqui ...
-
-    assert( i, 50 );
-    assert( j, 29 );
-}
-```
-
->### Ejercicio 2
 
 **NOTA**: Este ejercicio está pensado para que lo hagan utilizando papel y lapiz
 
 Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
 
-```
-void pasajePorValor(int parametro, int nuevoValor) {
-    parametro = nuevoValor;
-};
+        ```
+        int main()
+        {
+            float decimales[] = { 1.1, 2.2, 3.3 };
+            int indice;
 
-void pasajePorReferencia(int* parametro, int nuevoValor) {
-    *parametro = nuevoValor;
-};
+            for(indice = 0; indice < 3; ++indice) {
+                printf("decimales[%d] = %f\n", indice, decimales[indice]);
+            }
+        
+            return 0;
+        }
+        ```
 
-int main()
-{
-    float pi = 3.14;
-    int decimales = 2;
+### Ejercicio 2
 
-    int* direccionEntera = 0;
-    float* direccionDecimal = &pi;
+1. Modificar los assert de forma tal que los tests pasen. 
+2. Porqué el valor del sizeof es tal?
+3. Cuantos elementos tiene el array *decimales*?
+4. Cuantos elementos tiene el array *enteros*?
+5. Cuál es el tamaño de un *float*?
+6. Cuál es el tamaño de un *int*?
+7. Qué relación existe entre el tamaño del array y el tamaño del tipo de dato?
 
-    printf("El valor de 'pi' %f, almacenado en la dirección 0x%x\n", pi, direccionDecimal);
+        ```
+        int main()
+        {
+            double decimales[] = { 1.1, 2.2, 3.3 };
+            int enteros[] = { 2, 8, 16, 32, 64};
 
-    printf("El valor de 'decimales' %d almacenado en la dirección 0x%x\n", decimales, &decimales );
-    pasajePorValor(decimales, 28);
-    printf("El valor de 'decimales' %d almacenado en la dirección 0x%x - luego de invocar pasajePorValor\n", decimales, &decimales );
-    direccionEntera = &decimales;
-    pasajePorReferencia(direccionEntera, 15);
-    printf("El valor de 'decimales' %d almacenado en la dirección 0x%x - luego de invocar pasajePorValor\n", decimales, &decimales );
-}
-```
+            assert( sizeof(decimales), 0);
+            assert( sizeof(enteros), 0);
+        
+            assert( sizeof(double), 8);
+            assert( sizeof(int), 4);
+        
+            return 0;
+        }
+        ```
 
 ### Ejercicio 3
 
-**NOTA**: Este ejercicio está pensado para que lo hagan utilizando papel y lapiz
+1. Modificar los assert de forma tal que los tests pasen. 
+2. Cuantos elementos contiene el array?
+3. Que estamos haciendo cuando cambiamos el valor del elemento 6?
+4. Podemos hacer lo que estamos haciendo en el punto 3? Porqué?
 
-1. Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
+        ```
+        int main()
+        {
+            int enteros[] = { 2, 8, 16, 32, 64};
 
-```
-int main()
-{
-    float decimales[] = { 1.1, 2.2, 3.3 };
-    int indice;
+            assert( enteros[0], 0);
+            assert( enteros[4], 0);
 
-    for(indice = 0; indice < 3; ++indice) {
-        printf("decimales[%d] = %f\n", indice, decimales[indice]);
-    }
-    
-    return 0;
-}
-```
+            enteros[5] = 128;
+        
+            return 0;
+        }
+        ```
 
-2. Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
-
-```
-int main()
-{
-    float decimales[] = { 1.1, 2.2, 3.3 };
-    float* direccion = decimales;
-
-    while ( direccion - decimales < 3 ) {
-        printf("decimales[%d] = %f\n", direccion - decimales, *direccion);
-        ++direccion;
-    }
-    
-    return 0;
-}
-```
 
 ### Ejercicio 4
 
@@ -111,15 +78,14 @@ int main()
     int array[] = { , , , , , , , };
 
     assert( array[1], 2 );
-    assert( *(array+1), 2 );
 
     assert( array[5], 9);
     assert( array[6], 10 );
 
-    // codigo (no utilizar corchetes)
+    // codigo 
 
-    assert( *(array+5), 10);
-    assert( *(array+6), 9 );
+    assert( array[5], 10);
+    assert( array[6], 9 );
     
 }
 ```

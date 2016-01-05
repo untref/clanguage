@@ -10,7 +10,11 @@ Configuración de entorno y utilización de salida standard
 
 ### [Guia 2][2]
 
-Array y punteros
+Array
+
+### [Guia 3][2]
+
+Punteros
 
 ### [Guia 4][4]
 
@@ -22,5 +26,6 @@ C++
 
 [1]: guia01/
 [2]: guia02/
+[3]: guia03/
 [4]: guia04/
 [6]: guia06/
