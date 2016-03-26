@@ -4,6 +4,10 @@ Aquí encontrarán un conjunto de ejercicios para la materia
 
 **En construcción...**
 
+### [Guia 0][0]
+
+Programación Funcional
+
 ### [Guia 1][1]
 
 Configuración de entorno y utilización de salida standard
@@ -24,6 +28,7 @@ TDA
 
 C++
 
+[0]: guia00/
 [1]: guia01/
 [2]: guia02/
 [3]: guia03/
