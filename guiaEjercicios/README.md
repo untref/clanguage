@@ -8,19 +8,23 @@ Aquí encontrarán un conjunto de ejercicios para la materia
 
 Programación Funcional
 
-### [Guia 1][1]
+### [Guia 1][7]
+
+Programación Lógica
+
+### [Guia 2][1]
 
 Configuración de entorno y utilización de salida standard
 
-### [Guia 2][2]
+### [Guia 3][2]
 
 Array
 
-### [Guia 3][2]
+### [Guia 4][2]
 
 Punteros
 
-### [Guia 4][4]
+### [Guia 5][4]
 
 TDA
 
@@ -34,3 +38,4 @@ C++
 [3]: guia03/
 [4]: guia04/
 [6]: guia06/
+[7]: guiaLogica/
