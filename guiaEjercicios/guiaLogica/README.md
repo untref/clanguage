@@ -1,33 +1,6 @@
 ## Guia 01 - Guia Prolog
 
-### Ejercicio 1 - Dada la siguiente base de conocimiento:
-
-palabra(abalone,a,b,a,l,o,n,e).
-palabra(abandon,a,b,a,n,d,o,n).
-palabra(enhance,e,n,h,a,n,c,e).
-palabra(anagram,a,n,a,g,r,a,m).
-palabra(connect,c,o,n,n,e,c,t).
-palabra(elegant,e,l,e,g,a,n,t).
-
-Se busca resolver el siguiente problema: Colocar las palabras de modo tal que se puedan ubicarlas en el siguiente tablero.
-
-|----+---+----+---+----+---+----|
-|    |   | V1 |   | V2 |   | V3 |
-|----+---+----+---+----+---+----|
-| H1 |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-|    |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-| H2 |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-|    |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-| H3 |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-
-* Ejercicio extraido desde "Learn Prolog Now! By: Patrick Blackburn, Johan Bos and Kristian Striegnitz"
-
-### Ejercicio 2 - Apellidos
+### Ejercicio 1 - Apellidos
 
 Dada la siguiente base de datos de conocimentos:
 
@@ -43,6 +16,35 @@ apellido(walter, rossi)?
 apellido(lucia, rossi)?
 
 
+### Ejercicio 2 - Dada la siguiente base de conocimiento:
+
+palabra(abalone,a,b,a,l,o,n,e).
+palabra(abandon,a,b,a,n,d,o,n).
+palabra(enhance,e,n,h,a,n,c,e).
+palabra(anagram,a,n,a,g,r,a,m).
+palabra(connect,c,o,n,n,e,c,t).
+palabra(elegant,e,l,e,g,a,n,t).
+
+Se busca resolver el siguiente problema: Colocar las palabras de modo tal que se puedan ubicarlas en el siguiente tablero.
+
+|----+---+----+---+----+---+----|
+|    |   | V1 |   | V2 |   | V3 |
+|----+---+----+---+----+---+----|
+|    |   |    |   |    |   |    | 
+|----+---+----+---+----+---+----|
+| H1 |   |    |   |    |   |    |
+|----+---+----+---+----+---+----|
+|    |   |    |   |    |   |    |
+|----+---+----+---+----+---+----|
+| H2 |   |    |   |    |   |    |
+|----+---+----+---+----+---+----|
+|    |   |    |   |    |   |    |
+|----+---+----+---+----+---+----|
+| H3 |   |    |   |    |   |    |
+|----+---+----+---+----+---+----|
+
+* Ejercicio extraido desde "Learn Prolog Now! By: Patrick Blackburn, Johan Bos and Kristian Striegnitz"
+
 ### Ejercicio 3 - Hernamos
 
 **NOTA**: Dos personas son hermanos si tienen un padre o madre en común
@@ -56,13 +58,12 @@ madre(beatriz, capusotto, lucia).
 madre(beatriz, capusotto, walter).
 madre(beatriz, capusotto, rodolfo).
 madre(jimena, kaplan, camilla).
+madre(irma, jusid, raquel).
 
 Responder:
 hermanos(walter, lucia)? (*true*)
 hermanos(camilla, lucia)? (*true*)
-hermanos(rodolfo, camila)? (*false*)
-
-
+hermanos(raquel, camila)? (*false*)
 
 ### Ejercicio 4 - Viajeros
 
@@ -103,4 +104,12 @@ Construir un predicado que devuelva *true* cuando un elemento está dentro de la
 ### Ejercicio 6 - Reverso de lista
 
 Construir un predicado que devuelva el reverso de la lista. [1,2,3] -> [3,2,1].
+
+### Ejercicio 7 - Concatenar listas
+
+Construir un predicado que devuelva la concatenación de dos listas.
+
+### Ejercicio 8 - Palindromo
+
+Tomando como definido el predicado revert/2 (que invierte el orden de los elementos de una lista), crear un predicado que sea verdad cuando la palabra parametro es un palindromo.
 
