@@ -2,8 +2,6 @@
 
 ### Ejercicio 1
 
-**NOTA**: Este ejercicio está pensado para que lo hagan utilizando papel y lapiz
-
 Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
 
         ```
@@ -22,7 +20,7 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
 
 ### Ejercicio 2
 
-1. Modificar los assert de forma tal que los tests pasen. 
+1. Predecir el/los valores que imprimirá ```printf```. 
 2. Porqué el valor del sizeof es tal?
 3. Cuantos elementos tiene el array *decimales*?
 4. Cuantos elementos tiene el array *enteros*?
@@ -36,11 +34,11 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
             double decimales[] = { 1.1, 2.2, 3.3 };
             int enteros[] = { 2, 8, 16, 32, 64};
 
-            assert( sizeof(decimales), 0);
-            assert( sizeof(enteros), 0);
+            printf("sizeof(decimales): %d\n", sizeof(decimales)); 
+            printf("sizeof(enteros): %d\n", sizeof(enteros)); 
         
-            assert( sizeof(double), 8);
-            assert( sizeof(int), 4);
+            printf("sizeof(double): %d\n", sizeof(double)); 
+            printf("sizeof(int): %d\n", sizeof(int)); 
         
             return 0;
         }
@@ -48,7 +46,7 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
 
 ### Ejercicio 3
 
-1. Modificar los assert de forma tal que los tests pasen. 
+1. Predecir el/los valores que imprimirá ```printf```. 
 2. Cuantos elementos contiene el array?
 3. Que estamos haciendo cuando cambiamos el valor del elemento 6?
 4. Podemos hacer lo que estamos haciendo en el punto 3? Porqué?
@@ -58,8 +56,8 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
         {
             int enteros[] = { 2, 8, 16, 32, 64};
 
-            assert( enteros[0], 0);
-            assert( enteros[4], 0);
+            printf( enteros[0]);
+            printf( enteros[4]);
 
             enteros[5] = 128;
         
@@ -70,38 +68,22 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
 
 ### Ejercicio 4
 
-Sin modificar los assert, modificar el código de forma tal que los tests pasen:
-
-```
-int main()
-{
-    int array[] = { , , , , , , , };
-
-    assert( array[1], 2 );
-
-    assert( array[5], 9);
-    assert( array[6], 10 );
-
-    // codigo 
-
-    assert( array[5], 10);
-    assert( array[6], 9 );
-    
-}
-```
-
-### Ejercicio 5
-
-Completar los asserts para que las pruebas pasen:
+1. Predecir el/los valores que imprimirá ```printf```. 
+2. Porqué el sizeof de params es  tal?
+3. Hacer procedimiento para imprimir el array
+4. Se modifica el array en alguna de las funciones? Porque?
+5. Que es pasaje por valor y por referencia?
 
 ```
 
 void f(int param[]) {
-    assert( sizeof(param), ... );
+    printf("sizeof(param): %d\n", sizeof(param) );
+    param[3] = 6;
 };
 
 void g(int* param) {
-    assert( sizeof(param), ... );
+    printf("sizeof(param): %d\n", sizeof(param) );
+    param[6] = 6;
 };
 
 
@@ -109,12 +91,35 @@ int main()
 {
     int array[] = { 1,2,3,4,5,6,7,8 };
 
-    assert( sizeof(array), ... );
-    assert( sizeof(int), ... );
+    f(array);
+    g(array);
     
+    // Imprimir 
 }
 ```
 
+### Ejercicio 5
 
+1. Generar una función que copie el contenido de un array de enteros a  otro.
+2. Que debemos tener en cuenta al momento de realizar la copia?
+3. Generar una función que copie el contenido de un array de flotantes a  otro.
+4. Puedo realizar una copia desde el array de enteros al de flotantes (utilizando estas funciones)?
+5. Que desventajas tiene este código? Se puede mejorar? Cómo (no es necesario hacerlo)?
+```
+#define TAMANO_DESTINO  1 /* modificar de ser necesario */
+int main()
+{
+    int origen[] = { 1,2,3,4,5,6,7,8 };
+    int destino[TAMANO_DESTINO];
+    int origenf[] = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8 };
+    int destinof[TAMANO_DESTINO];
+    
+    copiar_enteros(destino, origen, /* ... */);
+    copiar_flotantes(destinof, origenf, /* ... */);
+}
+```
 
+### Ejercicio 6
+
+Crear un procedimiento que perminta revertir los elementos de un array.
 

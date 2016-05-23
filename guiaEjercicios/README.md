@@ -20,7 +20,7 @@ Configuración de entorno y utilización de salida standard
 
 Array
 
-### [Guia 4][2]
+### [Guia 4][3]
 
 Punteros
 
