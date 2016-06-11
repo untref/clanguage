@@ -104,54 +104,54 @@ int main()
 **NOTA**: Este ejercicio está pensado para que lo hagan utilizando papel y lapiz
 
 1. Hacer un esquema de memoria con el mayor detalle posible para realizar el seguiento del programa. Considerar que la primera dirección del proceso es 0xff00.
-2. Cuál es el valor de p, q y r en la linea 116, 117 y 118?
-3. Cuál es el valor de p, q y r en la linea 121, 122 y 123? Que significa?
-4. Qué valor tiene 'simple' luego de que se ejecuto la linea 128?
-5. Qué valor tiene *p y *q luego de que se ejecuto la linea 128?
-6. Se modifico el array enteros luego de que se ejecutó la linea 134?
-7. Se modifico el array enteros luego de que se ejecutaron las lineas hasta 138?
-8. Algun elemento del array es 0 luego de ejecutar la linea 142?
-9. Y luego de ejecutar la linea 143?
-10. Porqué la resta de los punteros de la linea 146 toma ese valor?
-11. Porqué la resta de los punteros de la linea 146 toma ese valor? Cuanto vale?
-11. Porqué la resta de los punteros de la linea 151 toma ese valor? Cuanto vale?
+2. Cuál es el valor de p, q y r en la linea 5, 6 y 7?
+3. Cuál es el valor de p, q y r en la linea 9, 10 y 11? Que significa?
+4. Qué valor tiene 'simple' luego de que se ejecuto la linea 13?
+5. Qué valor tiene *p y *q luego de que se ejecuto la linea 13?
+6. Se modifico el array enteros luego de que se ejecutó la linea 17?
+7. Se volvió a modificar el array enteros luego de que se ejecutaron las lineas hasta 20?
+8. Algun elemento del array es 0 luego de ejecutar la linea 22?
+9. Y luego de ejecutar la linea 25?
+10. Porqué la suma de los punteros de la linea 25 toma ese valor?
+11. Porqué la resta de los punteros de la linea 27 toma ese valor? Cuanto vale?
+11. Porqué la resta de los punteros de la linea 31 toma ese valor? Cuanto vale?
 
 
 ```
-int main()
-{
-    int enteros[] = { 1, 2, 3, 4, 7, 78, 174 };
-    int simple = 32;
-    int radio = 4;
-    int* p;
-    int* q;
-    int* r;
-    
-    p = enteros + 6;
-    q = &simple;
-    r = q;
-    
-    *r = 115;
-    
-    r = &radio;
-    
-    *p = radio;
-    
-    p = r;
-    q = enteros;
-    
-    *(q+ 4) = 0;
-    *p = 0;
-    
-    r = q + 1;
-    
-    q - r;
-  
-    p = enteros + 3;
-    
-    q - p;
-    return 0;
-}
+00 int main()
+01 {
+02    int enteros[] = { 1, 2, 3, 4, 7, 78, 174 };
+03    int simple = 32;
+04    int radio = 4;
+05    int* p;
+06    int* q;
+07    int* r;
+08    
+09    p = enteros + 6;
+10    q = &simple;
+11    r = q;
+12    
+13    *r = 115;
+14    
+15    r = &radio;
+16    
+17    *p = radio;
+18    
+19    p = r;
+20    q = enteros;
+21    
+22    *(q+ 4) = 0;
+23    *p = 0;
+24    
+25    r = q + 1;
+26    
+27    q - r;
+28  
+29    p = enteros + 3;
+30    
+31    q - p;
+32    return 0;
+33}
 ```
 
 
