@@ -12,6 +12,11 @@ void imprimir_flotante(void*  i) {
     printf("%f\n", *v);
 }
 
+void imprimir_double(void*  i) {
+    double* v = (double*)i;
+    printf("%f\n", *v);
+}
+
 /****
  * Esta función itera un vector e invoca la funcion 'f' para cada uno de sus
  * elementos
@@ -31,7 +36,9 @@ void imprimir(void* vector, unsigned tam_data, int cant, FuncionImpresion f) {
 int main(int argc, char* argv[]) {
   int enteros[] = {1,2,3,4};
   float decimales[] = {1.1,2.2};
+  double DECIMALES[] = {3.1,3.2};
 
   imprimir(enteros,   sizeof(int),   sizeof(enteros)/sizeof(int),     &imprimir_entero);
   imprimir(decimales, sizeof(float), sizeof(decimales)/sizeof(float), &imprimir_flotante);
+  imprimir(DECIMALES, sizeof(double), sizeof(DECIMALES)/sizeof(double), &imprimir_double);
 }
