@@ -18,7 +18,7 @@ void matriz_free(Matriz* this) {
 };
 
 int* matriz_offset(Matriz* this, unsigned row, unsigned col) {
-    return (this->elements + row * this->elementCount * sizeof(int)) + (col * sizeof(int));
+    return this->elements + row * this->elementCount + col;
 }
 
 void matriz_set_at(Matriz* this, unsigned row, unsigned col, int value) {
