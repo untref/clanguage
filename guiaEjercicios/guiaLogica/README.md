@@ -113,3 +113,53 @@ Construir un predicado que devuelva la concatenación de dos listas.
 
 Tomando como definido el predicado revert/2 (que invierte el orden de los elementos de una lista), crear un predicado que sea verdad cuando la palabra parametro es un palindromo.
 
+### Ejercicio 9 - 8 Reinas
+
+Dado un tablero de ajedrez con 8 reinas ya ubicadas necesitamos saber si las 8 reinas estan posicionadas de manera que ninguna ataque a otra.
+
+La siguiente configuración de tablero es válida:
+
+    1   2   3   4   5   6   7   8
+  |---+---+---+---+---+---+---+---|
+1 |   |   |   |   |   |   |   | R | 
+  |---+---+---+---+---+---+---+---|
+2 |   |   |   | R |   |   |   |   | 
+  |---+---+---+---+---+---+---+---|
+3 | R |   |   |   |   |   |   |   | 
+  |---+---+---+---+---+---+---+---|
+4 |   |   | R |   |   |   |   |   |
+  |---+---+---+---+---+---+---+---|
+5 |   |   |   |   |   | R |   |   |
+  |---+---+---+---+---+---+---+---|
+6 |   | R |   |   |   |   |   |   |
+  |---+---+---+---+---+---+---+---|
+7 |   |   |   |   |   |   | R |   |
+  |---+---+---+---+---+---+---+---|
+8 |   |   |   |   | R |   |   |   |
+  |---+---+---+---+---+---+---+---|
+
+La siguiente configuración de tablero es **inválida**:
+
+    1   2   3   4   5   6   7   8
+  |---+---+---+---+---+---+---+---|
+1 | R |   |   |   |   |   |   |   | 
+  |---+---+---+---+---+---+---+---|
+2 |   |   |   | R |   |   |   |   | 
+  |---+---+---+---+---+---+---+---|
+3 | R |   |   |   |   |   |   |   | 
+  |---+---+---+---+---+---+---+---|
+4 |   |   | R |   |   |   |   |   |
+  |---+---+---+---+---+---+---+---|
+5 |   |   |   |   |   | R |   |   |
+  |---+---+---+---+---+---+---+---|
+6 |   | R |   |   |   |   |   |   |
+  |---+---+---+---+---+---+---+---|
+7 |   |   |   |   |   |   | R |   |
+  |---+---+---+---+---+---+---+---|
+8 |   |   |   |   | R |   |   |   |
+  |---+---+---+---+---+---+---+---|
+
+La base de conocimiento que tenemos inicialmente es (tablero válido):
+
+    tablero([q(3,1), q(6,2), q(4,3), q(2,4), q(8,5), q(5,6), q(7,7), q(1,8)]).
+
