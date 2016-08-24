@@ -4,10 +4,12 @@
 
 Dada la siguiente base de datos de conocimentos:
 
-padre(guillermo, rossi, walter).
-madre(beatriz, capusotto, walter).
-padre(guillermo, rossi, lucia).
-madre(beatriz, capusotto, lucia).
+```prolog
+    padre(guillermo, rossi, walter).
+    madre(beatriz, capusotto, walter).
+    padre(guillermo, rossi, lucia).
+    madre(beatriz, capusotto, lucia).
+```
 
 Responder (true):
 apellido(guillermo, rossi)?
@@ -18,30 +20,35 @@ apellido(lucia, rossi)?
 
 ### Ejercicio 2 - Dada la siguiente base de conocimiento:
 
-palabra(abalone,a,b,a,l,o,n,e).
-palabra(abandon,a,b,a,n,d,o,n).
-palabra(enhance,e,n,h,a,n,c,e).
-palabra(anagram,a,n,a,g,r,a,m).
-palabra(connect,c,o,n,n,e,c,t).
-palabra(elegant,e,l,e,g,a,n,t).
+```prolog
+    palabra(abalone,a,b,a,l,o,n,e).
+    palabra(abandon,a,b,a,n,d,o,n).
+    palabra(enhance,e,n,h,a,n,c,e).
+    palabra(anagram,a,n,a,g,r,a,m).
+    palabra(connect,c,o,n,n,e,c,t).
+    palabra(elegant,e,l,e,g,a,n,t).
+```
 
 Se busca resolver el siguiente problema: Colocar las palabras de modo tal que se puedan ubicarlas en el siguiente tablero.
-
-|----+---+----+---+----+---+----|
-|    |   | V1 |   | V2 |   | V3 |
-|----+---+----+---+----+---+----|
-|    |   |    |   |    |   |    | 
-|----+---+----+---+----+---+----|
-| H1 |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-|    |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-| H2 |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-|    |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
-| H3 |   |    |   |    |   |    |
-|----+---+----+---+----+---+----|
+```
+    |----+---+----+---+----+---+----+---|
+    |    |   | V1 |   | V2 |   | V3 |   |
+    |----+---+----+---+----+---+----+---|
+    |    |   |    |   |    |   |    |   | 
+    |----+---+----+---+----+---+----+---|
+    | H1 |   |    |   |    |   |    |   |
+    |----+---+----+---+----+---+----+---|
+    |    |   |    |   |    |   |    |   |
+    |----+---+----+---+----+---+----+---|
+    | H2 |   |    |   |    |   |    |   |
+    |----+---+----+---+----+---+----+---|
+    |    |   |    |   |    |   |    |   |
+    |----+---+----+---+----+---+----+---|
+    | H3 |   |    |   |    |   |    |   |
+    |----+---+----+---+----+---+----+---|
+    |    |   |    |   |    |   |    |   | 
+    |----+---+----+---+----+---+----+---|
+```
 
 * Ejercicio extraido desde "Learn Prolog Now! By: Patrick Blackburn, Johan Bos and Kristian Striegnitz"
 
@@ -50,15 +57,17 @@ Se busca resolver el siguiente problema: Colocar las palabras de modo tal que se
 **NOTA**: Dos personas son hermanos si tienen un padre o madre en común
 Dada la siguiente base de datos de conocimentos:
 
-padre(guillermo, rossi, walter).
-padre(guillermo, rossi, lucia).
-padre(guillermo, rossi, camilla).
+```prolog
+    padre(guillermo, rossi, walter).
+    padre(guillermo, rossi, lucia).
+    padre(guillermo, rossi, camilla).
 
-madre(beatriz, capusotto, lucia).
-madre(beatriz, capusotto, walter).
-madre(beatriz, capusotto, rodolfo).
-madre(jimena, kaplan, camilla).
-madre(irma, jusid, raquel).
+    madre(beatriz, capusotto, lucia).
+    madre(beatriz, capusotto, walter).
+    madre(beatriz, capusotto, rodolfo).
+    madre(jimena, kaplan, camilla).
+    madre(irma, jusid, raquel).
+```
 
 Responder:
 hermanos(walter, lucia)? (*true*)
@@ -69,22 +78,24 @@ hermanos(raquel, camila)? (*false*)
 
 Dada la siguiente base de datos de conocimentos:
 
-enAuto(auckland,hamilton).
-enAuto(hamilton,raglan).
-enAuto(valmont,saarbruecken).
-enAuto(valmont,metz).
+```prolog
+    enAuto(auckland,hamilton).
+    enAuto(hamilton,raglan).
+    enAuto(valmont,saarbruecken).
+    enAuto(valmont,metz).
 
-enTren(metz,frankfurt).
-enTren(saarbruecken,frankfurt).
-enTren(metz,paris).
-enTren(saarbruecken,paris).
+    enTren(metz,frankfurt).
+    enTren(saarbruecken,frankfurt).
+    enTren(metz,paris).
+    enTren(saarbruecken,paris).
 
-enAvion(frankfurt,bangkok).
-enAvion(frankfurt,singapore).
-enAvion(paris,losAngeles).
-enAvion(bangkok,auckland).
-enAvion(singapore,auckland).
-enAvion(losAngeles,auckland).
+    enAvion(frankfurt,bangkok).
+    enAvion(frankfurt,singapore).
+    enAvion(paris,losAngeles).
+    enAvion(bangkok,auckland).
+    enAvion(singapore,auckland).
+    enAvion(losAngeles,auckland).
+```
 
 Se necesita: Construir una regla llamada viajar/2 (recibe desde hasta) que responda si es posible llegar desde un lugar hacia otro, cualquiera sea el método de trasporte que utilicemos. Considerar combinaciones.
 
@@ -118,48 +129,52 @@ Tomando como definido el predicado revert/2 (que invierte el orden de los elemen
 Dado un tablero de ajedrez con 8 reinas ya ubicadas necesitamos saber si las 8 reinas estan posicionadas de manera que ninguna ataque a otra.
 
 La siguiente configuración de tablero es válida:
-
+```
     1   2   3   4   5   6   7   8
-  |---+---+---+---+---+---+---+---|
-1 |   |   |   |   |   |   |   | R | 
-  |---+---+---+---+---+---+---+---|
-2 |   |   |   | R |   |   |   |   | 
-  |---+---+---+---+---+---+---+---|
-3 | R |   |   |   |   |   |   |   | 
-  |---+---+---+---+---+---+---+---|
-4 |   |   | R |   |   |   |   |   |
-  |---+---+---+---+---+---+---+---|
-5 |   |   |   |   |   | R |   |   |
-  |---+---+---+---+---+---+---+---|
-6 |   | R |   |   |   |   |   |   |
-  |---+---+---+---+---+---+---+---|
-7 |   |   |   |   |   |   | R |   |
-  |---+---+---+---+---+---+---+---|
-8 |   |   |   |   | R |   |   |   |
-  |---+---+---+---+---+---+---+---|
+    |---+---+---+---+---+---+---+---|
+  1 |   |   |   |   |   |   |   | R | 
+    |---+---+---+---+---+---+---+---|
+  2 |   |   |   | R |   |   |   |   | 
+    |---+---+---+---+---+---+---+---|
+  3 | R |   |   |   |   |   |   |   | 
+    |---+---+---+---+---+---+---+---|
+  4 |   |   | R |   |   |   |   |   |
+    |---+---+---+---+---+---+---+---|
+  5 |   |   |   |   |   | R |   |   |
+    |---+---+---+---+---+---+---+---|
+  6 |   | R |   |   |   |   |   |   |
+    |---+---+---+---+---+---+---+---|
+  7 |   |   |   |   |   |   | R |   |
+    |---+---+---+---+---+---+---+---|
+  8 |   |   |   |   | R |   |   |   |
+    |---+---+---+---+---+---+---+---|
+```
 
 La siguiente configuración de tablero es **inválida**:
 
+```
     1   2   3   4   5   6   7   8
-  |---+---+---+---+---+---+---+---|
-1 | R |   |   |   |   |   |   |   | 
-  |---+---+---+---+---+---+---+---|
-2 |   |   |   | R |   |   |   |   | 
-  |---+---+---+---+---+---+---+---|
-3 | R |   |   |   |   |   |   |   | 
-  |---+---+---+---+---+---+---+---|
-4 |   |   | R |   |   |   |   |   |
-  |---+---+---+---+---+---+---+---|
-5 |   |   |   |   |   | R |   |   |
-  |---+---+---+---+---+---+---+---|
-6 |   | R |   |   |   |   |   |   |
-  |---+---+---+---+---+---+---+---|
-7 |   |   |   |   |   |   | R |   |
-  |---+---+---+---+---+---+---+---|
-8 |   |   |   |   | R |   |   |   |
-  |---+---+---+---+---+---+---+---|
+    |---+---+---+---+---+---+---+---|
+  1 | R |   |   |   |   |   |   |   | 
+    |---+---+---+---+---+---+---+---|
+  2 |   |   |   | R |   |   |   |   | 
+    |---+---+---+---+---+---+---+---|
+  3 | R |   |   |   |   |   |   |   | 
+    |---+---+---+---+---+---+---+---|
+  4 |   |   | R |   |   |   |   |   |
+    |---+---+---+---+---+---+---+---|
+  5 |   |   |   |   |   | R |   |   |
+    |---+---+---+---+---+---+---+---|
+  6 |   | R |   |   |   |   |   |   |
+    |---+---+---+---+---+---+---+---|
+  7 |   |   |   |   |   |   | R |   |
+    |---+---+---+---+---+---+---+---|
+  8 |   |   |   |   | R |   |   |   |
+    |---+---+---+---+---+---+---+---|
+```
 
 La base de conocimiento que tenemos inicialmente es (tablero válido):
 
+```prolog
     tablero([q(3,1), q(6,2), q(4,3), q(2,4), q(8,5), q(5,6), q(7,7), q(1,8)]).
-
+```
