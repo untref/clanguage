@@ -1,32 +1,34 @@
-## Guia 02 - Punteros
+## Guia 02 - Punteros & Strings
+
+>> **NOTA:** Es importante realizar los diagramas de menoria para realizar estos ejercicios
 
 ### Ejercicio 1
 
 1. Predecir el/los valores que imprimirá ```printf```. 
 2. Intercambiar valores de i y j
 
-    ```
-        int main()
-        {
-            int i = 29;
-            int j = 50;
-            int* direccionI = 0;
-            int* direccionJ = 0;
+```c
+    int main()
+    {
+        int i = 29;
+        int j = 50;
+        int* direccionI = 0;
+        int* direccionJ = 0;
 
-            printf("*direccionJ: %d\n"), *direccionJ);
-            printf("*direccionI: %d\n"), *direccionI);
+        printf("*direccionJ: %d\n"), *direccionJ);
+        printf("*direccionI: %d\n"), *direccionI);
 
 
-            // Sin asignar nuevos valores a i o j ni
-            // utilizar constantes literales;
-            // intercambiar los valores de i y j
+        // Sin asignar nuevos valores a i o j ni
+        // utilizar constantes literales;
+        // intercambiar los valores de i y j
 
-            // codigo aqui ...
+        // codigo aqui ...
 
-            printf("i: %d\n"), i);
-            printf("j: %d\n"), j);
-        }
-    ```
+        printf("i: %d\n"), i);
+        printf("j: %d\n"), j);
+    }
+```
 
 ### Ejercicio 2
 
@@ -34,7 +36,7 @@
 
 Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
 
-```
+```c
 void pasajePorValor(int parametro, int nuevoValor) {
     parametro = nuevoValor;
 };
@@ -68,7 +70,7 @@ int main()
 
 1. Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
 
-```
+```c
 int main()
 {
     float decimales[] = { 1.1, 2.2, 3.3 };
@@ -84,7 +86,7 @@ int main()
 
 2. Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
 
-```
+```c
 int main()
 {
     float decimales[] = { 1.1, 2.2, 3.3 };
@@ -154,6 +156,16 @@ int main()
 33}
 ```
 
+### Ejercicio 5
 
+Copiar en contenido de un array de caracteres a un array destino.
+
+1. Qué condiciones debe cumplir el destino?
+2. Qué condiciones debe cumplir el origen?
+3. Como defino y declaro una función que lleva a cabo la tarea?
+
+### Ejercicio 6
+
+Definir una función que permita concatenar dos strings.
 
 
