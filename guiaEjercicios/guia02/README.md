@@ -4,7 +4,7 @@
 
 Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
 
-        ```
+        ```c
         int main()
         {
             float decimales[] = { 1.1, 2.2, 3.3 };
@@ -16,6 +16,7 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
         
             return 0;
         }
+        
         ```
 
 ### Ejercicio 2
@@ -28,7 +29,7 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
 6. Cuál es el tamaño de un *int*?
 7. Qué relación existe entre el tamaño del array y el tamaño del tipo de dato?
 
-        ```
+        ```c
         int main()
         {
             double decimales[] = { 1.1, 2.2, 3.3 };
@@ -42,6 +43,7 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
         
             return 0;
         }
+        
         ```
 
 ### Ejercicio 3
@@ -51,7 +53,7 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
 3. Que estamos haciendo cuando cambiamos el valor del elemento 6?
 4. Podemos hacer lo que estamos haciendo en el punto 3? Porqué?
 
-        ```
+        ```c
         int main()
         {
             int enteros[] = { 2, 8, 16, 32, 64};
@@ -63,6 +65,7 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
         
             return 0;
         }
+        
         ```
 
 
@@ -74,7 +77,7 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
 4. Se modifica el array en alguna de las funciones? Porque?
 5. Que es pasaje por valor y por referencia?
 
-```
+```c
 
 void f(int param[]) {
     printf("sizeof(param): %d\n", sizeof(param) );
@@ -96,6 +99,7 @@ int main()
     
     // Imprimir 
 }
+
 ```
 
 ### Ejercicio 5
@@ -105,7 +109,7 @@ int main()
 3. Generar una función que copie el contenido de un array de flotantes a  otro.
 4. Puedo realizar una copia desde el array de enteros al de flotantes (utilizando estas funciones)?
 5. Que desventajas tiene este código? Se puede mejorar? Cómo (no es necesario hacerlo)?
-```
+```c
 #define TAMANO_DESTINO  1 /* modificar de ser necesario */
 int main()
 {
@@ -117,6 +121,7 @@ int main()
     copiar_enteros(destino, origen, /* ... */);
     copiar_flotantes(destinof, origenf, /* ... */);
 }
+
 ```
 
 ### Ejercicio 6
