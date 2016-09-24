@@ -4,20 +4,20 @@
 
 Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
 
-        ```c
-        int main()
-        {
-            float decimales[] = { 1.1, 2.2, 3.3 };
-            int indice;
+```c
+int main()
+{
+    float decimales[] = { 1.1, 2.2, 3.3 };
+    int indice;
 
-            for(indice = 0; indice < 3; ++indice) {
-                printf("decimales[%d] = %f\n", indice, decimales[indice]);
-            }
-        
-            return 0;
-        }
-        
-        ```
+    for(indice = 0; indice < 3; ++indice) {
+        printf("decimales[%d] = %f\n", indice, decimales[indice]);
+    }
+
+    return 0;
+}
+
+```
 
 ### Ejercicio 2
 
@@ -29,22 +29,22 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
 6. Cuál es el tamaño de un *int*?
 7. Qué relación existe entre el tamaño del array y el tamaño del tipo de dato?
 
-        ```c
-        int main()
-        {
-            double decimales[] = { 1.1, 2.2, 3.3 };
-            int enteros[] = { 2, 8, 16, 32, 64};
+```c
+int main()
+{
+    double decimales[] = { 1.1, 2.2, 3.3 };
+    int enteros[] = { 2, 8, 16, 32, 64};
 
-            printf("sizeof(decimales): %d\n", sizeof(decimales)); 
-            printf("sizeof(enteros): %d\n", sizeof(enteros)); 
-        
-            printf("sizeof(double): %d\n", sizeof(double)); 
-            printf("sizeof(int): %d\n", sizeof(int)); 
-        
-            return 0;
-        }
-        
-        ```
+    printf("sizeof(decimales): %d\n", sizeof(decimales)); 
+    printf("sizeof(enteros): %d\n", sizeof(enteros)); 
+
+    printf("sizeof(double): %d\n", sizeof(double)); 
+    printf("sizeof(int): %d\n", sizeof(int)); 
+
+    return 0;
+}
+
+```
 
 ### Ejercicio 3
 
@@ -53,20 +53,20 @@ Dado la siguiente porción de código, hacer un esquema del stack y un seguimien
 3. Que estamos haciendo cuando cambiamos el valor del elemento 6?
 4. Podemos hacer lo que estamos haciendo en el punto 3? Porqué?
 
-        ```c
-        int main()
-        {
-            int enteros[] = { 2, 8, 16, 32, 64};
+```c
+int main()
+{
+    int enteros[] = { 2, 8, 16, 32, 64};
 
-            printf( enteros[0]);
-            printf( enteros[4]);
+    printf( enteros[0]);
+    printf( enteros[4]);
 
-            enteros[5] = 128;
-        
-            return 0;
-        }
-        
-        ```
+    enteros[5] = 128;
+
+    return 0;
+}
+
+```
 
 
 ### Ejercicio 4
