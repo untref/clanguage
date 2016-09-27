@@ -4,6 +4,8 @@
 
 Implementar en JavaScript las expresiones TRUE, FALSE, NOT, AND y OR.
 
+[Soluciones](../../Funcional/logic_and_list.js)
+
 ### Ejercicio 2 - Pares
 
 Dada la definición de pares (según la codificacón Church) escribir las expresiones lambdas que permiten obtener el primer
