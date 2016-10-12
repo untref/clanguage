@@ -1,4 +1,4 @@
-## Guia 02 - Arrays
+## Guia Arrays
 
 ### Ejercicio 1
 

@@ -32,10 +32,10 @@ TDA
 
 C++
 
-[0]: guia00/
-[1]: guia01/
-[2]: guia02/
-[3]: guia03/
-[4]: guia04/
+[0]: guiaFuncional/
+[1]: guiaConfiguracion/
+[2]: guiaArrays/
+[3]: guiaPunteros/
+[4]: guiaTDA/
 [6]: guia06/
 [7]: guiaLogica/

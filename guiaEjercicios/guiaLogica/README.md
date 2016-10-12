@@ -1,4 +1,4 @@
-## Guia 01 - Guia Prolog
+## Guia Lógica - Guia Prolog
 
 ### Ejercicio 1 - Apellidos
 

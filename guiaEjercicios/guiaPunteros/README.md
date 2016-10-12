@@ -1,6 +1,6 @@
-## Guia 02 - Punteros & Strings
+## Guia Punteros - Punteros & Strings
 
->> **NOTA:** Es importante realizar los diagramas de menoria para realizar estos ejercicios
+> **NOTA:** Es importante realizar los diagramas de menoria para realizar estos ejercicios
 
 ### Ejercicio 1
 

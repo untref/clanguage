@@ -1,4 +1,4 @@
-## Guia 00 - Implementación en JavaScript de Codificación 
+## Guia Funcional
 
 ### Ejercicio 1 - Algebra de Bool
 
