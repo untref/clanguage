@@ -12,11 +12,13 @@ Dada la siguiente base de datos de conocimentos:
 ```
 
 Responder (true):
-apellido(guillermo, rossi)?
-apellido(beatriz, capusotto)?
-apellido(walter, rossi)?
-apellido(lucia, rossi)?
 
+```prolog
+apellido(guillermo, rossi).
+apellido(beatriz, capusotto).
+apellido(walter, rossi).
+apellido(lucia, rossi).
+```
 
 ### Ejercicio 2 - Dada la siguiente base de conocimiento:
 
@@ -70,9 +72,10 @@ Dada la siguiente base de datos de conocimentos:
 ```
 
 Responder:
-hermanos(walter, lucia)? (*true*)
-hermanos(camilla, lucia)? (*true*)
-hermanos(raquel, camila)? (*false*)
+
+1. ```hermanos(walter, lucia)``` (*true*)
+2. ```hermanos(camilla, lucia)``` (*true*)
+3. ```hermanos(raquel, camila)``` (*false*)
 
 ### Ejercicio 4 - Viajeros
 
@@ -100,10 +103,11 @@ Dada la siguiente base de datos de conocimentos:
 Se necesita: Construir una regla llamada viajar/2 (recibe desde hasta) que responda si es posible llegar desde un lugar hacia otro, cualquiera sea el método de trasporte que utilicemos. Considerar combinaciones.
 
 Responder:
-viajar(valmont, auckland)? (*true*)
-viajar(auckland, raglan)? (*true*)
-viajar(valmont, metz)? (*true*)
-viajar(valmont, bsas)? (*false*)
+
+1. ```viajar(valmont, auckland)``` (*true*)
+2. ```viajar(auckland, raglan)``` (*true*)
+3. ```viajar(valmont, metz)``` (*true*)
+4. ```viajar(valmont, bsas)``` (*false*)
 
 
 * Ejercicio extraido desde [swi-prolog](http://lpn.swi-prolog.org/lpnpage.php?pagetype=html&pageid=lpn-htmlse12)

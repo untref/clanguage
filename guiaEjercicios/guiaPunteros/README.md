@@ -169,3 +169,10 @@ Copiar en contenido de un array de caracteres a un array destino.
 Definir una función que permita concatenar dos strings.
 
 
+### Ejercicio 7 
+
+Definir una función que cree un array de ```n``` elementos.  El tamano de un elemento es parámetro. Esta función deberá proveer un parámetro opcional con el valor utilizado para inicializar cada una de las posiciones.
+
+### Ejercicio 8
+
+Dado dos arrays (cualquiera sea su tipo) crear un procedimiento o función que devuelva un array que sea la concatenación de ambas.
