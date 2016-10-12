@@ -1,9 +1,5 @@
 ## Guia 00 - Implementación en JavaScript de Codificación - SOLUCIONES
 
-### Ejercicio 1 - Algebra de Bool
-
-[Soluciones](../../Funcional/logic_and_list.js)
-
 ### Ejercicio 2 - Pares
 
 Expresión lambda que definen un par:
@@ -48,11 +44,15 @@ Segundo elemento del par:
      FALSE 1 2
 ```
 
-### Ejercicio 3 - Implementación de Pares
+### Ejercicio 4 - Algebra de Bool
 
 [Soluciones](../../Funcional/logic_and_list.js)
 
-### Ejercicio 4 - Listas
+### Ejercicio 5 - Implementación de Pares
+
+[Soluciones](../../Funcional/logic_and_list.js)
+
+### Ejercicio 6 - Listas
 
 Creo un par con dos elementos
 CONS(78)(9) == (78,9)
