@@ -16,29 +16,16 @@ enAvion(singapore,auckland).
 enAvion(losAngeles,auckland).
 
 %% Viajo en auto
-viajar(Desde, Hasta, ComoLego) :- enAuto(Desde,Hasta), ComoLego = ir(enAuto(Desde,Hasta)).
+viajar(Desde, Hasta) :- enAuto(Desde,Hasta).
 
 %% Viajo en tren
-viajar(Desde, Hasta, ComoLego) :- enTren(Desde,Hasta), ComoLego = ir(enTren(Desde,Hasta)).
+viajar(Desde, Hasta) :- enTren(Desde,Hasta).
 
 %% Viajo en avion
-viajar(Desde, Hasta, ComoLego) :- enAvion(Desde,Hasta), ComoLego = ir(enAvion(Desde,Hasta)).
-
-%% Combinacion auto - tren
-viajar(Desde, Hasta, ComoLego) :-
-   enAuto(Desde, Escala),
-   enTren(Escala, Hasta),
-   ComoLego = ir(enTren(Escala,Hasta), ir(enAuto(Desde,Escala))).
-
-%% Combinacion tren - avion
-viajar(Desde, Hasta, ComoLego) :-
-  enTren(Desde, Escala),
-  enAvion(Escala, Hasta),
-  ComoLego = ir(enAvion(Escala,Hasta), ir(enTren(Desde,Escala))).
+viajar(Desde, Hasta) :- enAvion(Desde,Hasta).
 
 %% Combinaciones recursivas
-viajar(Desde, Hasta, ComoLego) :-
-    viajar(Desde, Escala, S0),
-    viajar(Escala, Hasta, S1),
-    ComoLego = ir(S0,S1).
+viajar(Desde, Hasta) :-
+    viajar(Desde, Escala),
+    viajar(Escala, Hasta).
 
