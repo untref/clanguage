@@ -176,3 +176,23 @@ Definir una función que cree un array de ```n``` elementos.  El tamano de un el
 ### Ejercicio 8
 
 Dado dos arrays (cualquiera sea su tipo) crear un procedimiento o función que devuelva un array que sea la concatenación de ambas.
+
+### Ejercicio 9
+
+Crear una función/es que permita iterar un array de cualquier tipo (sin repetir código) y elemento a elemento imprima cada uno de sus elementos.  
+
+```c
+
+int main(int argc, char** argv) {
+  int      enteros[] = { 1, 2, 3};
+  double decimales[] = { 1.1, 2.2, 3.3 };
+
+  // Invoco  la función que itera
+  iterador( enteros, .... );
+
+  
+  iterador( decimales, .... );
+}
+```
+
+
