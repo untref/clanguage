@@ -3,8 +3,8 @@
 ## Recomendaciones
 
 1. Concurrir a cada una de las clases teóricas
-2. Si no concurre a la clase teórica, comuniquesé con **sus compañeros** para ver que se dió en la teórica.
-3. Si no concurre a la clase teórica y no se pudo comunicar con sus compañeros, comuniquesé con el **docente** (los datos de contactos están en la página).
+2. Si no concurre a la clase teórica, comuníquese con **sus compañeros** para ver que se dió en la teórica.
+3. Si no concurre a la clase teórica y no se pudo comunicar con sus compañeros, comuníquese con el **docente** (los datos de contactos están en la página).
 4. Para cada una de las teóricas se van a proponer una serie de ejercicios, hagalos! **NOTA**: si no se alcanza el resultado es porque algún concepto no lo conoce. Pregunte!
 5. El TP Final es grupal. Si algún integrante del grupo abandona la materia, el grupo (reducido) deberá hacer las entregas según lo programado.
 6. Esta no es una materia extensa pero involucra varios conceptos nuevos para el estudiante. Estudie semanalmente en lugar de unos pocos días muchas horas antes del exámen.
