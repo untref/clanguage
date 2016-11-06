@@ -19,12 +19,12 @@
 
 ## Reglas
 
-1. Todos los temas se evaluán excepto que se enuncio lo contrario.
+1. Todos los temas se evalúan excepto que se enuncie lo contrario.
 2. El TP Final es grupal. Si algún integrante del grupo abandona la materia, el grupo (reducido) deberá hacer las entregas según lo programado.
 
 ## Home page
 
-Aquí encontraran noticias, encuestas y actividades que se llevan a cabo durante el cuatrimestre: [algo3untref][1]
+Aquí encontraran noticias, encuestas y actividades que se llevarán a cabo durante el cuatrimestre: [algo3untref][1]
 
 ## [Hall of Fame][2]
 Inauguramos esta nueva sección con el fin de que los alumnos que se han esmerado en la construcción de su TP Final tengan un reconocimiento (más allá del triunfo que implica haber aprendido el contenido que se dicta en la materia)
