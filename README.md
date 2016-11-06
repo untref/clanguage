@@ -6,18 +6,21 @@
 2. Si no concurre a la clase teórica, comuníquese con **sus compañeros** para ver que se dió en la teórica.
 3. Si no concurre a la clase teórica y no se pudo comunicar con sus compañeros, comuníquese con el **docente** (los datos de contactos están en la página).
 4. Para cada una de las teóricas se van a proponer una serie de ejercicios, hagalos! **NOTA**: si no se alcanza el resultado es porque algún concepto no lo conoce. Pregunte!
-5. El TP Final es grupal. Si algún integrante del grupo abandona la materia, el grupo (reducido) deberá hacer las entregas según lo programado.
 6. Esta no es una materia extensa pero involucra varios conceptos nuevos para el estudiante. Estudie semanalmente en lugar de unos pocos días muchas horas antes del exámen.
-7. Todos los temas se evaluán excepto que se enuncio lo contrario.
-8. Lenguaje de programación C:
+7. Lenguaje de programación C:
   1. Programe el lenguaje C en horarios de lucidez (ni por las noches ni en medio de otras actividades)
   2. Entienda lo que escribe escribe y evite copiar y pegar código de Stackoverflow
-9. Sea proactivo, Ud. es el responsable final de su educación. Si algunos de los los siguientes elementos no se le suministran **reclame** al docente¨
-9.1. Código de la última clase.
-9.2. Material defectuoso. 
-9.3. Guía de ejercicios.
-9.4. Lecturas adicionales.
-9.5. Presentaciones (PPTs).
+8. Sea proactivo, Ud. es el responsable final de su educación. Si algunos de los los siguientes elementos no se le suministran **reclame** al docente¨
+  1. Código de la última clase.
+  2. Material defectuoso. 
+  3. Guía de ejercicios.
+  4. Lecturas adicionales.
+  5. Presentaciones (PPTs).
+
+## Reglas
+
+1. Todos los temas se evaluán excepto que se enuncio lo contrario.
+2. El TP Final es grupal. Si algún integrante del grupo abandona la materia, el grupo (reducido) deberá hacer las entregas según lo programado.
 
 ## Home page
 
