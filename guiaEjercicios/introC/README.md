@@ -3,9 +3,9 @@
 ## Ejercicio 1 - Arrays
 
 Definir una array de tipo ```T``` e imprimir sus valores. Realizar los ejercicios con los siguientes tipos:
-- ```int```
-- ```unsigned```
-- ```double```
++ int
++ unsigned
++ double
 
 1. Qué valores obtuvo?
 2. Los valores son los que esperaba?
@@ -14,9 +14,9 @@ Definir una array de tipo ```T``` e imprimir sus valores. Realizar los ejercicio
 ## Ejercicio 2 - Arrays o Punteros
 
 Definir una array de tipo ```T``` e imprimir sus valores (no utilizar el operador []). Realizar los ejercicios con los siguientes tipos:
-- ```int```
-- ```unsigned```
-- ```double```
+- int
+- unsigned
+- double
 
 1. Qué valores obtuvo?
 2. Los valores son los que esperaba?
@@ -55,7 +55,7 @@ int main(int argc, char** argv) {
 2. Se imprime la leyenda *q y p son iguales*?
 3. Cuanto vale ```p``` luego de ejecutar la linea 38? Es válido el puntero?
 4. Cuanto vale ```q``` luego de ejecutar la linea 40? Es válido el puntero?
-5. Se imprime la leyenda *\*p es igual a \*q*?
+5. Se imprime la leyenda * \*p es igual a \*q*?
 6. Qué imprimirá la linea 48? Funciona?
 
 ### Ejercicio 4 - Tamañon de datos
