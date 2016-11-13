@@ -9,6 +9,10 @@
 
 ### Segunda entrega
 
+**Pendiente**
+
+### Segunda entrega
+
 **Aprobada**
 
 1. Cuando tiene un cuyo cuerpo es muy largo, cambien la condición para que este (el cuerpo) contenga menos lineas.  Huffman.c:72.
