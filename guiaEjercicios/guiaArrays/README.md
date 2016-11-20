@@ -1,32 +1,13 @@
-## Guia Arrays
+## Guia Arrays en detalles
 
 ### Ejercicio 1
 
-Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
-
-```c
-int main()
-{
-    float decimales[] = { 1.1, 2.2, 3.3 };
-    int indice;
-
-    for(indice = 0; indice < 3; ++indice) {
-        printf("decimales[%d] = %f\n", indice, decimales[indice]);
-    }
-
-    return 0;
-}
-
-```
-
-### Ejercicio 2
-
 1. Predecir el/los valores que imprimirá ```printf```. 
 2. Porqué el valor del sizeof es tal?
-3. Cuantos elementos tiene el array *decimales*?
-4. Cuantos elementos tiene el array *enteros*?
-5. Cuál es el tamaño de un *float*?
-6. Cuál es el tamaño de un *int*?
+3. Cuantos elementos tiene el array **decimales**?
+4. Cuantos elementos tiene el array **enteros**?
+5. Cuál es el tamaño de un **float**?
+6. Cuál es el tamaño de un **int**?
 7. Qué relación existe entre el tamaño del array y el tamaño del tipo de dato?
 
 ```c
@@ -46,7 +27,7 @@ int main()
 
 ```
 
-### Ejercicio 3
+### Ejercicio 2
 
 1. Predecir el/los valores que imprimirá ```printf```. 
 2. Cuantos elementos contiene el array?
@@ -58,18 +39,17 @@ int main()
 {
     int enteros[] = { 2, 8, 16, 32, 64};
 
-    printf( enteros[0]);
-    printf( enteros[4]);
-
-    enteros[5] = 128;
+    printf( enteros[0] );
+    printf( enteros[4] );
+    printf( enteros[5] );
+    enteros[5] = 9; 
 
     return 0;
 }
 
 ```
 
-
-### Ejercicio 4
+### Ejercicio 3
 
 1. Predecir el/los valores que imprimirá ```printf```. 
 2. Porqué el sizeof de params es  tal?
@@ -101,6 +81,30 @@ int main()
 }
 
 ```
+
+### Ejercicio 4
+
+Definir un array origen y un array destino y copiar el contenido de uno en otro (el siguiente código tiene una trampa). 
+
+```c
+int main()
+{
+    float origen[] = { 1.1, 2.2, 3.3 };
+    float destino[];
+
+    // Codigo aquí
+
+    // Imprima el contenido de ambos arrays aquí
+
+    return 0;
+}
+```
+
+1. Escribir el código para solucionar este problema.
+2. Confeccionar el gráfico de memoria
+3. Funcionó? 
+4. Que fué lo que hicimos?
+
 
 ### Ejercicio 5
 

@@ -1,36 +1,71 @@
-## Guia Punteros - Punteros & Strings
+## Guia Punteros - Punteros
 
 > **NOTA:** Es importante realizar los diagramas de menoria para realizar estos ejercicios
 
 ### Ejercicio 1
 
-1. Predecir el/los valores que imprimirá ```printf```. 
-2. Intercambiar valores de i y j
+Dado el siguiente código:
 
 ```c
     int main()
     {
         int i = 29;
         int j = 50;
-        int* direccionI = 0;
-        int* direccionJ = 0;
 
-        printf("*direccionJ: %d\n"), *direccionJ);
-        printf("*direccionI: %d\n"), *direccionI);
-
-
-        // Sin asignar nuevos valores a i o j ni
-        // utilizar constantes literales;
-        // intercambiar los valores de i y j
-
-        // codigo aqui ...
-
-        printf("i: %d\n"), i);
-        printf("j: %d\n"), j);
+        char vector[] = { 0x1, 0x2, 0x3 };
     }
 ```
 
+1. Cuál es la dirección de ```i```?
+2. Cuál es la dirección de ```j```?
+3. Cuál es la dirección de ```vector```?
+4. Cuál es la dirección de ```vector[0]```?
+5. Cuál es la dirección de ```vector[1]```?
+
 ### Ejercicio 2
+
+Dado el siguiente código:
+
+```c
+    int main()
+    {
+        int vector[] = { 0x1, 0x2, 0x3 };
+    }
+```
+
+1. Cuál es el resultado de la siguiente operación: ```vector + 1```? Es la suma algebraica?
+2. Cuál es el resultado de la siguiente operación: ```vector + 200```? Puedo hacer esta operación? Porqué?
+3. Cuál es el resultado de la siguiente operación: ```&vector[2] - &vector[0]```? Puedo hacer esta operación? Porqué?
+
+### Ejercicio 3
+
+Dado el siguiente código:
+
+```c
+    int main()
+    {
+        float auro = 1.6180;
+        int primo = 999631;
+        float* pf;
+        int* pi;
+  
+        void* pv = 0x0;
+
+        pf = &auro;
+        pi = &primo;
+
+        pv = pf;
+        pv = pi;
+    }
+```
+1. Son válidos los punteros declarados? Cuáles?
+2. Contienen valores numéricos los punteros? Cuáles son sus valores?
+3. Que dato contiene ```pv``` en la linea 58? Puedo derreferenciarlo? Porqué?
+4. Que dato contiene ```pv``` en la linea 59? Puedo derreferenciarlo? Porqué?
+5. Puedo asignar ```primo = auro```? Cuanto valdrá primo? Y ```*pi```?
+6. Puedo asignar ```auro = primo```? Cuanto valdrá primo? Y ```*pf```?
+
+### Ejercicio 4
 
 **NOTA**: Este ejercicio está pensado para que lo hagan utilizando papel y lapiz
 
@@ -64,44 +99,7 @@ int main()
 }
 ```
 
-### Ejercicio 3
-
-**NOTA**: Este ejercicio está pensado para que lo hagan utilizando papel y lapiz
-
-1. Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
-
-```c
-int main()
-{
-    float decimales[] = { 1.1, 2.2, 3.3 };
-    int indice;
-
-    for(indice = 0; indice < 3; ++indice) {
-        printf("decimales[%d] = %f\n", indice, decimales[indice]);
-    }
-    
-    return 0;
-}
-```
-
-2. Dado la siguiente porción de código, hacer un esquema del stack y un seguimiento (en este esquema) de como se van modificando las variables locales al main 
-
-```c
-int main()
-{
-    float decimales[] = { 1.1, 2.2, 3.3 };
-    float* direccion = decimales;
-
-    while ( direccion - decimales < 3 ) {
-        printf("decimales[%d] = %f\n", direccion - decimales, *direccion);
-        ++direccion;
-    }
-    
-    return 0;
-}
-```
-
-### Ejercicio 4
+### Ejercicio 5
 
 **NOTA**: Este ejercicio está pensado para que lo hagan utilizando papel y lapiz
 
@@ -156,28 +154,39 @@ int main()
 33}
 ```
 
-### Ejercicio 5
-
-Copiar en contenido de un array de caracteres a un array destino.
-
-1. Qué condiciones debe cumplir el destino?
-2. Qué condiciones debe cumplir el origen?
-3. Como defino y declaro una función que lleva a cabo la tarea?
-
 ### Ejercicio 6
 
-Definir una función que permita concatenar dos strings.
+Dado el siguiente código:
 
+```c
+int suma(int a, int b) {
+  return a + b;
+}
 
-### Ejercicio 7 
+int resta(int a, int b) {
+  return a - b;
+}
 
-Definir una función que cree un array de ```n``` elementos.  El tamano de un elemento es parámetro. Esta función deberá proveer un parámetro opcional con el valor utilizado para inicializar cada una de las posiciones.
+int main() {
+  int (*f)(int, int) = 0;
+
+  printf("producto: %d\n", (*f)(9, 9));
+  
+```
+
+1. De que tipo es la variable ```f```?
+2. Modificar el programa para que imprima el producto de 9 y 9.
+
+### Ejercicio 7
+
+Realizar el esquema de memoria del stack de este programa:
+
+```c
+int main(int argc, char** argv) {
+}
+```
 
 ### Ejercicio 8
-
-Dado dos arrays (cualquiera sea su tipo) crear un procedimiento o función que devuelva un array que sea la concatenación de ambas.
-
-### Ejercicio 9
 
 Crear una función/es que permita iterar un array de cualquier tipo (sin repetir código) y elemento a elemento imprima cada uno de sus elementos.  
 

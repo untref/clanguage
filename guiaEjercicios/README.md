@@ -24,7 +24,7 @@ Array
 
 ### [Guia 4][3]
 
-Punteros
+Punteros y Arrays dinámicos
 
 ### [Guia 5][4]
 

@@ -1,8 +1,34 @@
 ## Lenguaje C
 
-## Ejercicio 1 - Arrays
+**Objetivos**: Poder definir vectores 
+
+### Ejercicio 1 - Tipos en C
+
+```c
+int main(int argc, char** argv) {
+  int entero;
+  unsigned enteroSinSigno;
+  long int enteroLargo;
+  long unsigned enteroLargoSinSigno;
+  float decimalSimple;
+  double decimalDoblePrecision;
+
+  printf("Tamañano de un entero con sign:               %lu\n", sizeof(entero) );
+  printf("Tamañano de un entero con sin sign:           %lu\n", sizeof(enteroSinSigno) );
+  printf("Tamañano de un entero largo con sign:         %lu\n", sizeof(enteroLargo) );
+  printf("Tamañano de un entero largo sin sign:         %lu\n", sizeof(enteroLargoSinSigno ) );
+  printf("Tamañano de un flotante:                      %lu\n", sizeof(decimalSimple) );
+  printf("Tamañano de un double:                        %lu\n", sizeof(decimalDoblePrecision) );
+}
+```
+
+1. Qué salida producirán los printfs anteriros?
+2. Cuanta memoria ocupará un conjunto  de 10 elementos para cada uno de los tipos anteriores?
+
+## Ejercicio 2 - Arrays
 
 Definir una array de tipo ```T``` e imprimir sus valores. Realizar los ejercicios con los siguientes tipos:
+
 + int
 + unsigned
 + double
@@ -10,17 +36,8 @@ Definir una array de tipo ```T``` e imprimir sus valores. Realizar los ejercicio
 1. Qué valores obtuvo?
 2. Los valores son los que esperaba?
 3. Como resolvemos el problema?
-
-## Ejercicio 2 - Arrays o Punteros
-
-Definir una array de tipo ```T``` e imprimir sus valores (no utilizar el operador []). Realizar los ejercicios con los siguientes tipos:
-- int
-- unsigned
-- double
-
-1. Qué valores obtuvo?
-2. Los valores son los que esperaba?
-3. Como resolvemos el problema?
+4. Imprimir el sizeof para cada uno de los arrays. Cuanto da? Puede inferirlo antes de ejecutar el código?
+5. Como hacemos para inicializar el array con valores?
 
 ### Ejercicio 3 - Punteros y sus posibles valores
 
@@ -53,27 +70,8 @@ int main(int argc, char** argv) {
 
 1. Cuál es la diferencia entre ```p``` y ```q```?
 2. Se imprime la leyenda *q y p son iguales*?
-3. Cuanto vale ```p``` luego de ejecutar la linea 38? Es válido el puntero?
-4. Cuanto vale ```q``` luego de ejecutar la linea 40? Es válido el puntero?
+3. Cuanto vale ```p``` luego de ejecutar la linea 66? Es válido el puntero?
+4. Cuanto vale ```q``` luego de ejecutar la linea 68? Es válido el puntero?
 5. Se imprime la leyenda * \*p es igual a \*q*?
-6. Qué imprimirá la linea 48? Funciona?
-
-### Ejercicio 4 - Tamañon de datos
-
-```c
-int main(int argc, char** argv) {
-
-  printf("Tamañano de un entero con sign:               %lu\n", sizeof(int) );
-  printf("Tamañano de un entero con sin sign:           %lu\n", sizeof(unsigned) );
-  printf("Tamañano de un entero largo con sign:         %lu\n", sizeof(long int) );
-  printf("Tamañano de un entero largo sin sign:         %lu\n", sizeof(long unsigned ) );
-  printf("Tamañano de un flotante:                      %lu\n", sizeof(float) );
-  printf("Tamañano de un double:                        %lu\n", sizeof(double) );
-}
-```
-
-1. Qué salida producirán los printfs anteriros?
-2. Cuanta memoria ocupará un array de 10 elementos para cada uno de los tipos anteriores?
-3. Definir un array de 10 elementos por tipo e iniciarlos con una suceción de números primos (para todos los tipos)
-4. Imprimir el sizeof para cada uno de los arrays
+6. Qué imprimirá la linea 75? Funciona?
 
