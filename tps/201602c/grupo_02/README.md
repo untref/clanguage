@@ -12,6 +12,7 @@
 **Aprobada** 
 
 NOTA: 5
+
 1. No puedo comprimir y descomprimir:
 
 ```sh
