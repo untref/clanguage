@@ -7,6 +7,18 @@
 
 ## Entregas
 
+### Cuarta entrega
+
+**Aprobado**
+
+NOTA: 4
+
+1. ```./c -f f1.txt -o f1_c``` no genera el archivo ```f1_c```.
+2. Escribir y leer estan comentados ```huffman.c:48,50```
+3. No logro descomprimir la secuencia de unos y ceros
+4. No puedo leer el informe
+
+
 ### Tercera entrega 
 
 **Aprobada**
