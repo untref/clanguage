@@ -1,40 +1,33 @@
-**UNTREF**
 
-**Algoritmos y programación 3**
+# Trabajo práctico Final: 
 
-*Trabajo práctico Final: TDA generación de archivos JSON*
+TDA generación de archivos JSON
 
 2do cuatrimestre, 2015
 
 (Trabajo Grupal)
 
-Alumnos:
+## Alumnos:
 
-  ----- --------------- -------- ------------------------
-  Nro   Nombre          Legajo   Mail
-  1     Klemenc Marco   29914    marcoklemenc@gmail.com
-  2     Gaspari Waldo   29840    waldogaspari@gmail.com
-  3                              
-                                 
-  ----- --------------- -------- ------------------------
+| Nombre   |  Legajo | Mail  |
+|---|---|---|
+|   Klemenc Marco | 29914  | marcoklemenc@gmail.com  |
+| Gaspari Waldo  | 29840  |  waldogaspari@gmail.com |
 
 ***Fecha de entrega final***: Sábado 14/11/2015
 
 ***Nota Final***:
 
-Introducción
-============
+### Introducción
 
-Objetivo del trabajo
-====================
+#### Objetivo del trabajo
 
 Aplicar los conceptos enseñados en la materia a la resolución de un
 problema así como también la aplicación de buenas prácticas, trabajando
 en forma grupal y utilizando un lenguaje de tipado estático de bajo
 nivel (Lenguaje C)
 
-Consigna general
-----------------
+#### Consigna general
 
 Desarrollar un conjunto de TDAs que permitan operar con un conjunto de
 JSON (JavaScript object notation). Una vez creado este conjunto de datos
@@ -42,12 +35,12 @@ utilizarlo en la generación de un archivo JSON. La aplicación deberá ser
 acompañada con la apropiada documentación de diseño. En la siguiente
 sección se describe la aplicación a desarrollar.
 
-Descripción de la aplicación a desarrollar
-==========================================
+#### Descripción de la aplicación a desarrollar
 
 Definir un conjunto de TDAs que permitan generar el siguiente archivo
 JSON:
 
+```json
 {
 
 "size": "0 bytes",
@@ -119,8 +112,9 @@ JSON:
 "revision": 29007
 
 }
+```
 
-**Consignas para el programa principal:**
+#### Consignas para el programa principal:
 
 Luego de definir apropiadamente las estructuras crear el programa
 principal que generará este archivo. Dicho programa podrá recibir como
