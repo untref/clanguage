@@ -4,4 +4,5 @@ Aquí pueden encontrar TPS destacados de la materia
 
 
 **NOTA**
-LOS TPs publicados en esta sección fueron publicados luego de que los alumnos diran el concentimiento para que sus trabajos sean públicos.
+
+LOS TPS PUBLICADOS EN ESTA SECCIÓN FUERON PUBLICADOS LUEGO DE QUE LOS ALUMNOS DIRAN EL CONCENTIMIENTO PARA QUE SUS TRABAJOS SEAN PÚBLICOS.
