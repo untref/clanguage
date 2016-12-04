@@ -21,6 +21,8 @@
 
 1. Todos los temas se evalúan excepto que se enuncie lo contrario.
 2. El TP Final es grupal. Si algún integrante del grupo abandona la materia, el grupo (reducido) deberá hacer las entregas según lo programado.
+3. Para aprobar el parcial el alumno deberá mostrar conocimiento de todos los temas (sin excepción).
+4. Semanalmente se asignaran tareas que deberán ser completadas en el transcurso de la semana. Cada clase un alumno deberá mostrar la solución que generó para una de las tareas que el docente haya elegido.
 
 ## Home page
 
