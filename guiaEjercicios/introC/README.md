@@ -25,7 +25,91 @@ int main(int argc, char** argv) {
 1. Qué salida producirán los printfs anteriros?
 2. Cuanta memoria ocupará un conjunto  de 10 elementos para cada uno de los tipos anteriores?
 
-## Ejercicio 2 - Arrays
+### Ejercicio 2
+
+Dado el siguiente código:
+
+```c
+01    int main()
+02    {
+03        float auro = 1.6180;
+04        int primo = 999631;
+05        float* pf;
+06        int* pi;
+07  
+08        void* pv = 0x0;
+09
+10        pf = &auro;
+11        pi = &primo;
+12
+13        pv = pf;
+14        pv = pi;
+15    }
+```
+1. Son válidos los punteros declarados? Cuáles? Porqué?
+2. Contienen valores numéricos los punteros? Cuáles son sus valores?
+3. Que dato contiene ```pv``` en la linea 09? Puedo derreferenciarlo? Porqué?
+4. Que dato contiene ```pv``` en la linea 14 y 15? Puedo derreferenciarlo? Porqué?
+5. Puedo asignar ```primo = auro```? Cuanto valdrá primo? Y ```*pi```?
+6. Puedo asignar ```auro = primo```? Cuanto valdrá primo? Y ```*pf```?
+
+### Ejercicio 3
+
+**NOTA**: Este ejercicio está pensado para que lo hagan utilizando papel y lapiz
+
+1. Hacer un esquema de memoria con el mayor detalle posible para realizar el seguiento del programa. Considerar que la primera dirección del proceso es 0xff00.
+2. Cuál es el valor de p, q y r en la linea 5, 6 y 7?
+3. Cuál es el valor de p, q y r en la linea 9, 10 y 11? Que significa?
+4. Qué valor tiene 'simple' luego de que se ejecuto la linea 13?
+5. Qué valor tiene *p y *q luego de que se ejecuto la linea 13?
+6. Se modifico el array enteros luego de que se ejecutó la linea 17?
+7. Se volvió a modificar el array enteros luego de que se ejecutaron las lineas hasta 20?
+8. Algun elemento del array es 0 luego de ejecutar la linea 22?
+9. Y luego de ejecutar la linea 25?
+10. Porqué la suma de los punteros de la linea 25 toma ese valor?
+11. Porqué la resta de los punteros de la linea 27 toma ese valor? Cuanto vale?
+11. Porqué la resta de los punteros de la linea 31 toma ese valor? Cuanto vale?
+
+
+```
+00 int main()
+01 {
+02    int enteros[] = { 1, 2, 3, 4, 7, 78, 174 };
+03    int simple = 32;
+04    int radio = 4;
+05    int* p;
+06    int* q;
+07    int* r;
+08    
+09    p = enteros + 6;
+10    q = &simple;
+11    r = q;
+12    
+13    *r = 115;
+14    
+15    r = &radio;
+16    
+17    *p = radio;
+18    
+19    p = r;
+20    q = enteros;
+21    
+22    *(q+ 4) = 0;
+23    *p = 0;
+24    
+25    r = q + 1;
+26    
+27    q - r;
+28  
+29    p = enteros + 3;
+30    
+31    q - p;
+32    return 0;
+33}
+```
+
+
+## Ejercicio 4 - Arrays
 
 Definir una array de tipo ```T``` e imprimir sus valores. Realizar los ejercicios con los siguientes tipos:
 
