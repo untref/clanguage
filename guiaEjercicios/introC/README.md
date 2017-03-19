@@ -71,7 +71,7 @@ Dado el siguiente código:
 11. Porqué la resta de los punteros de la linea 31 toma ese valor? Cuanto vale?
 
 
-```
+```c
 00 int main()
 01 {
 02    int enteros[] = { 1, 2, 3, 4, 7, 78, 174 };
