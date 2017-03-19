@@ -32,4 +32,4 @@
 | 4                        |       |
 | 11                       |       |
 
-<a name="who">1</a>: Utilizamos número para preservar identidad del alumno y que este registro no se transforme en un ["The Truman Show"](http://www.imdb.com/title/tt0120382/
+<a name="who">1</a>: Utilizamos número para preservar identidad del alumno y que este registro no se transforme en un ["The Truman Show"](http://www.imdb.com/title/tt0120382/)
