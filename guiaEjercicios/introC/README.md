@@ -68,7 +68,7 @@ Dado el siguiente código:
 9. Y luego de ejecutar la linea 25?
 10. Porqué la suma de los punteros de la linea 25 toma ese valor?
 11. Porqué la resta de los punteros de la linea 27 toma ese valor? Cuanto vale?
-11. Porqué la resta de los punteros de la linea 31 toma ese valor? Cuanto vale?
+12. Porqué la resta de los punteros de la linea 31 toma ese valor? Cuanto vale?
 
 
 ```
