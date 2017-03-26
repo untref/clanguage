@@ -71,7 +71,7 @@ Dado el siguiente código:
 12. Porqué la resta de los punteros de la linea 31 toma ese valor? Cuanto vale?
 
 
-```
+```c
 00 int main()
 01 {
 02    int enteros[] = { 1, 2, 3, 4, 7, 78, 174 };
@@ -109,7 +109,7 @@ Dado el siguiente código:
 ```
 
 
-## Ejercicio 4 - Arrays
+### Ejercicio 4 - Arrays
 
 Definir una array de tipo ```T``` e imprimir sus valores. Realizar los ejercicios con los siguientes tipos:
 
@@ -123,7 +123,7 @@ Definir una array de tipo ```T``` e imprimir sus valores. Realizar los ejercicio
 4. Imprimir el sizeof para cada uno de los arrays. Cuanto da? Puede inferirlo antes de ejecutar el código?
 5. Como hacemos para inicializar el array con valores?
 
-### Ejercicio 3 - Punteros y sus posibles valores
+### Ejercicio 5 - Punteros y sus posibles valores
 
 ```c
 int main(int argc, char** argv) {
