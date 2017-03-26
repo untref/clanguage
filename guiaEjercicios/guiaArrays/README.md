@@ -1,6 +1,45 @@
 ## Guia Arrays en detalles
 
+> **NOTA:** Es importante realizar los diagramas de menoria para realizar estos ejercicios
+
 ### Ejercicio 1
+
+Dado el siguiente código:
+
+```c
+    int main()
+    {
+        int i = 29;
+        int j = 50;
+
+        char vector[] = { 0x1, 0x2, 0x3 };
+    }
+```
+
+1. Cuál es la dirección de ```i```?
+2. Cuál es la dirección de ```j```?
+3. Cuál es la dirección de ```vector```?
+4. Cuál es la dirección de ```vector[0]```?
+5. Cuál es la dirección de ```vector[1]```?
+6. Observa alguna relación entre estos valores?
+
+### Ejercicio 2
+
+Dado el siguiente código:
+
+```c
+    int main()
+    {
+        int vector[] = { 0x1, 0x2, 0x3 };
+    }
+```
+
+1. Cuál es el resultado de la siguiente operación: ```vector + 1```? Es la suma algebraica?
+2. Cuál es el resultado de la siguiente operación: ```vector - 1```? Es la resta algebraica?
+2. Cuál es el resultado de la siguiente operación: ```vector + 200```? Puedo hacer esta operación? Porqué?
+3. Cuál es el resultado de la siguiente operación: ```&vector[2] - &vector[0]```? Puedo hacer esta operación? Porqué?
+
+### Ejercicio 3
 
 1. Predecir el/los valores que imprimirá ```printf```. 
 2. Porqué el valor del sizeof es tal?
@@ -27,7 +66,7 @@ int main()
 
 ```
 
-### Ejercicio 2
+### Ejercicio 4
 
 1. Predecir el/los valores que imprimirá ```printf```. 
 2. Cuantos elementos contiene el array?
@@ -49,7 +88,7 @@ int main()
 
 ```
 
-### Ejercicio 3
+### Ejercicio 5
 
 1. Predecir el/los valores que imprimirá ```printf```. 
 2. Porqué el sizeof de params es  tal?
@@ -82,7 +121,7 @@ int main()
 
 ```
 
-### Ejercicio 4
+### Ejercicio 6
 
 Definir un array origen y un array destino y copiar el contenido de uno en otro (el siguiente código tiene una trampa). 
 
@@ -106,7 +145,7 @@ int main()
 4. Que fué lo que hicimos?
 
 
-### Ejercicio 5
+### Ejercicio 7
 
 1. Generar una función que copie el contenido de un array de enteros a  otro.
 2. Que debemos tener en cuenta al momento de realizar la copia?
@@ -128,7 +167,11 @@ int main()
 
 ```
 
-### Ejercicio 6
+### Ejercicio 8
 
 Crear un procedimiento que perminta revertir los elementos de un array.
+
+### Ejercicio 9
+
+Crear una función que encuentre un elemento en un array y si existe devuelva el subíndice dentro del array, de lo contrario -1. Debemos probar nuestra función utilizando arrays de enteros y de flotantes. Hay código duplicado? Lo podemos reducir? Cómo?
 

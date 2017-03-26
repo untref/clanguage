@@ -108,7 +108,6 @@ Dado el siguiente código:
 33}
 ```
 
-
 ### Ejercicio 4 - Arrays
 
 Definir una array de tipo ```T``` e imprimir sus valores. Realizar los ejercicios con los siguientes tipos:
@@ -158,4 +157,9 @@ int main(int argc, char** argv) {
 4. Cuanto vale ```q``` luego de ejecutar la linea 68? Es válido el puntero?
 5. Se imprime la leyenda * \*p es igual a \*q*?
 6. Qué imprimirá la linea 75? Funciona?
+
+
+### Ejercicio 6 - Procedimiento intercambio
+
+Crear un procedimiento para dado dos valores del mismo tipo sus valores sean intercambien.
 
