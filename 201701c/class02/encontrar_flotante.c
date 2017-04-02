@@ -34,6 +34,7 @@ void* encontrar_valor(void* vector, unsigned tamElemento, unsigned tamVector, vo
 
 int main(){
 
+    {
     int array[] = {3,7,9};
     int valor = 9;
     void* donde = encontrar_valor(array, sizeof(int), sizeof(array), &valor) ;
@@ -47,5 +48,21 @@ int main(){
 
     // Para derreferenciar tengo que castear (así sea un char*)
     printf("El valor apuntado : %d\n", *(int*)donde);
+    }
+    {
+    double array[] = {3.3, 7.7 , 9.9, 10.10, 11.11};
+    double valor = 10.10;
+    void* donde = encontrar_valor(array, sizeof(double), sizeof(array), &valor) ;
+
+
+    if ( donde == 0x0 ) {
+        return 0;
+    }
+    
+    printf("la direccion es: 0x%x\n", donde);
+
+    // Para derreferenciar tengo que castear (así sea un char*)
+    printf("El valor apuntado : %f\n", *(double*)donde);
+    }
 }
 
