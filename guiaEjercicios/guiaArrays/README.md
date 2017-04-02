@@ -212,9 +212,31 @@ int main(int argc, char** argv) {
 }
 ```
 
+## Strings
+
 ### Ejercicio 13
 
-Crear una función que dado un parrafó de texto devuelva las ocurrencias (punteros a char) de una palabra.
+Implementar la siguiente función:
+
+```c
+int longitud_string(char* str);
+```
+
+Que pasa si es null str?
+
+
+### Ejercicio 14
+
+Implementar la siguiente función:
+
+```c
+void concatenar_cadena(char* a, char* b, char* dst);
+```
+
+
+### Ejercicio 15
+
+Crear una función que dado un parrafó de texto devuelva las ocurrencias (punteros a char) de una palabra. 
 
 ```c
 int main(int argc, char** argv) {
@@ -223,7 +245,9 @@ int main(int argc, char** argv) {
 }
 ```
 
-### Ejercicio 14
+**NOTA:** pueden utilizar las primitivas de arrays.
+
+### Ejercicio 16
 
 Crear un procedimiento que reemplace una palabra por otra en un párrafo.
 
@@ -233,3 +257,4 @@ int main(int argc, char** argv) {
     // ...
 }
 ```
+**NOTA:** pueden utilizar las primitivas de arrays.
