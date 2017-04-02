@@ -186,7 +186,8 @@ int main(int argc, char** argv) {
     copiar(enteros_dst, enteros_src, ...);
 }
 ```
-## Ejercicio 11
+
+### Ejercicio 11
 
 Crear un procedimiento para copiar el contenido de un array (origen) entre las posiciones 'desde' - 'hasta' a otro array (destino). Es importante el tipo?
 
@@ -198,7 +199,7 @@ int main(int argc, char** argv) {
 }
 ```
 
-## Ejercicio 12
+### Ejercicio 12
 
 Crear un procedimiento para concatenar dos arrays (de cualquier tipo).
 
@@ -211,7 +212,7 @@ int main(int argc, char** argv) {
 }
 ```
 
-## Ejercicio 13
+### Ejercicio 13
 
 Crear una función que dado un parrafó de texto devuelva las ocurrencias (punteros a char) de una palabra.
 
@@ -222,7 +223,7 @@ int main(int argc, char** argv) {
 }
 ```
 
-## Ejercicio 14
+### Ejercicio 14
 
 Crear un procedimiento que reemplace una palabra por otra en un párrafo.
 
