@@ -175,3 +175,60 @@ Crear un procedimiento que perminta revertir los elementos de un array.
 
 Crear una función que encuentre un elemento en un array y si existe devuelva el subíndice dentro del array, de lo contrario -1. Debemos probar nuestra función utilizando arrays de enteros y de flotantes. Hay código duplicado? Lo podemos reducir? Cómo?
 
+## Ejercicio 10
+
+Crear un procedimiento para copiar el contenido de un array a otro. Es importante el tipo?
+
+```c
+int main(int argc, char** argv) {
+    int enteros_src[1024];
+    // int enteros_dst
+    copiar(enteros_dst, enteros_src, ...);
+}
+```
+## Ejercicio 11
+
+Crear un procedimiento para copiar el contenido de un array (origen) entre las posiciones 'desde' - 'hasta' a otro array (destino). Es importante el tipo?
+
+```c
+int main(int argc, char** argv) {
+    int enteros_src[1024];
+    // int enteros_dst
+    copiar(enteros_dst, enteros_src, desde, hasta, ...);
+}
+```
+
+## Ejercicio 12
+
+Crear un procedimiento para concatenar dos arrays (de cualquier tipo).
+
+```c
+int main(int argc, char** argv) {
+    int a[1024];
+    int b[1024];
+    // int destino;
+    concatenar(destino, a, b, ...);
+}
+```
+
+## Ejercicio 13
+
+Crear una función que dado un parrafó de texto devuelva las ocurrencias (punteros a char) de una palabra.
+
+```c
+int main(int argc, char** argv) {
+    char* parrafo = "este es un parrafo donde buscamos esta palabra a ver si aparece o no la palabra palabra";
+    // ...
+}
+```
+
+## Ejercicio 14
+
+Crear un procedimiento que reemplace una palabra por otra en un párrafo.
+
+```c
+int main(int argc, char** argv) {
+    char* parrafo = "este es un parrafo donde buscamos esta palabra a ver si aparece o no la palabra palabra";
+    // ...
+}
+```
