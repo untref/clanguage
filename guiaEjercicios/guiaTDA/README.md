@@ -4,7 +4,7 @@
 
 Definir el TDA Nave con la siguiente declaración:
 
-```
+```c
 #ifndef NAVE_H_INCLUDED
 #define NAVE_H_INCLUDED
     
@@ -32,7 +32,7 @@ Definir el TDA Cadena con la siguiente declaración teniendo en cuenta los sigui
 3. Liberar todos los recursos que se hayan alocado (antes de que el programa termine su ejecución).
 4. Escriba un main en el cual se muestre como se utiliza el TDA, creando para esto un TDA cadena con caracteres no imprimibles.
 
-```
+```c
 #ifndef CADENA_H_INCLUDED
 #define CADENA_H_INCLUDED
 
@@ -78,7 +78,7 @@ Definir el TDA Dupla con la siguiente declaración teniendo en cuenta los siguie
 3. Liberar todos los recursos que se hayan alocado (antes de que el programa termine su ejecución).
 4. Escriba un main en el cual se muestre como se utiliza el TDA, creando para esto un TDA Dupla que almacene un entero y luego un double.
 
-```
+```c
 #ifndef DUPLA_H_INCLUDED
 #define DUPLA_H_INCLUDED
 
