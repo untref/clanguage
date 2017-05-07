@@ -30,12 +30,17 @@ Punteros y Arrays dinámicos
 
 TDA
 
+### [Guia 6][5]
+
+Bits
+
 
 [0]: guiaFuncional/
 [1]: introC/
 [2]: guiaArrays/
 [3]: guiaPunteros/
 [4]: guiaTDA/
+[5]: guiaBits/
 [6]: guia06/
 [7]: guiaLogica/
 [8]: instalacionEntorno/
