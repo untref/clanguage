@@ -1,10 +1,9 @@
-# Grupo 03
+# Grupo 04
 
 ## Integrantes
 
-* Álvarez Felipe
-* Bosio Gabriel
-* ROMBOLA GUIDO IGNACIO
+* GHIO NAHUEL SEBASTIÁN
+* NICOLLIER FEDERICO NUMAS
 
 ## Entregas
 
@@ -12,6 +11,5 @@
 
 **Aprobado**
 
-1. Falta el liberar memoria de la collección
 2. El ```collection_remove``` es un complejo.  Hace muchas cosas, encontrar y eliminar. Devidir estas tareas en varias primitivas.
 
