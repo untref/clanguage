@@ -10,5 +10,3 @@
 
 **Aprobado**
 
-1. Misma resolución que Eugenio Batch
-
