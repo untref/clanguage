@@ -47,7 +47,7 @@ Coleccion* coleccion_eliminar(Coleccion* coleccion, void* elemento){
 
 Porqué comparan el ```aEliminar```, ```coleccion->inicio``` con memcmp? Son punteros! Utilicen ```==```.
 
-### No funciona (es correcto)
+### No funciona (es correcta la corrección)
 
 Luego de varias horas de debug :( creo haber encontrado el problema:
 
