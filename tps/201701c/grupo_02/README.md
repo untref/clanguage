@@ -3,6 +3,8 @@
 ## Integrantes
 
 * EUGENIO BATCH
+* ALAN ACHAVAL 
+* JULIAN ALFONZO
 
 ## Entregas
 
