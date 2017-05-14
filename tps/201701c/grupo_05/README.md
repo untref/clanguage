@@ -46,3 +46,44 @@ Coleccion* coleccion_eliminar(Coleccion* coleccion, void* elemento){
 ```
 
 Porqué comparan el ```aEliminar```, ```coleccion->inicio``` con memcmp? Son punteros! Utilicen ```==```.
+
+### No funciona (es correcto)
+
+Luego de varias horas de debug :( creo haber encontrado el problema:
+
+```c
+Coleccion* coleccion_inicializar(Coleccion* coleccion, void* elementos, unsigned cantidadElem, unsigned tamElem){
+	coleccion_inicializar_vacia(coleccion, tamElem);
+
+	coleccion->tam_coleccion=cantidadElem;
+	coleccion->tam_elemento=tamElem;
+	void* actual= elementos;
+
+	//Crea primer nodo
+	Nodo* nodo = nodo_crear(actual, tamElem);
+	coleccion->inicio=nodo;
+	nodo->ant=PRIMER_NODO;
+	cantidadElem--;
+
+	while((cantidadElem)){
+		actual+=tamElem;
+
+		if (cantidadElem!=1){
+			//No es último Nodo
+			nodo->sig = nodo_crear(actual, tamElem);
+			nodo->sig->ant=nodo;
+		}else{
+			//Es último nodo
+			nodo->sig = nodo_crear(actual, tamElem);
+			nodo->sig->ant=nodo;
+			coleccion->fin=nodo->sig;
+		}
+		cantidadElem--;
+		nodo = nodo->sig;
+	}
+	return coleccion;
+}
+```
+
+Nunca configuran el siguiente del último nodo!  Esto se ve fácil para una collección con un único elemento.
+
