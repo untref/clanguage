@@ -10,8 +10,15 @@
 
 ### Primera entrega
 
-**Desaprobado**
+**Aprobado**
 
-1. En el main no es necesario hacer ```Coleccion* coleccion = malloc(sizeof(Coleccion));```. Recordá **no utilizar heap** a menos que sea estrictamente necesario.
-2. No se entiende la diferencia entre ```elemento``` y ```espacio```.
-3. El remove hace dos cosas, busca y elimina. Crea una primitiva para buscar y otra para remover
+### array de void
+No es necesario crear un array de ```void*```. Porqué no un array de datos tamaño ```tamanio_elemento```.
+
+### coleccion_quitar hace dos cosas
+
+Esta primitiva búsca el elemento y luego lo quita de la colección. Esto no está bueno. Generar una primitiva para encontrar y otra para remover.
+
+### Respectar los nombres de las primitivas
+
+El TDA tienen nombres de primitivas específicas que están en el enunciado.  Respetar.
