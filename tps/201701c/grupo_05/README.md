@@ -7,6 +7,12 @@
 
 ## Entregas
 
+### Segunda entrega
+
+**Aprobado**
+
+Modificar los nombres de las primitivas para que coincidan con las del enunciado del TP.
+
 ### Primera entrega
 
 **Desaprobado**
