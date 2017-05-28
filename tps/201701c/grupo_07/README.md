@@ -41,8 +41,6 @@ No acceder a los atributos de un TDA sino a través de sus primitivas! En lugar 
 Agregar la documentación de las primitivas en el ```.h```  en lugar de agregarla en el ```.c```.  Recuerden que lo que se distribuye en la librería ```.a``` o ```.so```  y los ```.h``` pero no los ```.c```.
 
 
-El ```select``` debería utilizar el ```collect``` utilizando como función de transformación la identidad.  Hoy el código está duplicado.
-
 ### Primera entrega
 
 **Aprobado**
