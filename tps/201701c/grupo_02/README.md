@@ -8,6 +8,12 @@
 
 ## Entregas
 
+### Segunda entrega
+
+**Aprobado**
+
+Los nombres de las primitivas deben ser las especificadas por el enunciado.
+
 ### Primera entrega
 
 **Aprobado**
