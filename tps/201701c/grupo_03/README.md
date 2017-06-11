@@ -12,6 +12,10 @@
 
 **Aprobada**
 
+### Segunda entrega
+
+**Aprobada**
+
 ```c
 Collection* collection_remove(Collection* this, void* dato) {
     Node* encontrado = collection_find_node(this, dato);
