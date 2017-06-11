@@ -72,10 +72,13 @@ main_collection.c:105:32: warning: incompatible pointer types passing 'int *(*)(
 ./Collection.h:118:51: note: passing argument to parameter 'doIt' here
 void collection_reduceL(Collection* this, void* (*doIt)(void*, void*), void* result);
                                                   ^
-4 warnings generated.``` 
+4 warnings generated.
+
+``` 
+
+Viendo el código del main:
 
 ```c
-	{
 		//ReducirL
 		Collection vector2;
 		int valores2[] = {1,1,2,5,3,4};
@@ -85,7 +88,6 @@ void collection_reduceL(Collection* this, void* (*doIt)(void*, void*), void* res
 		printf("%d", *resultado2);
 		printf("\n\n");
 		collection_free(&vector2);
-	}
 ```
 
 Están almacenando en ```resultado2``` un entero pero ```resultado2``` es un puntero inválido. Falta este detalle: 
