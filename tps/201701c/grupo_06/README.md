@@ -8,6 +8,46 @@
 
 ## Entregas
 
+### Tercera entrega
+
+**Aprobado**
+
+```
+main.c:9:39: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test inicializacion/liberaci<F3>n de una Coleccion\n");
+                                                    ^~~~
+main.c:15:37: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test iteracion con impresi<F3>n de una Colecci<F3>n de enteros:\n");
+                                                  ^~~~                ~~~~
+main.c:23:37: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test iteracion con impresi<F3>n de una Colecci<F3>n de flotantes:\n");
+                                                  ^~~~                ~~~~
+main.c:31:37: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test iteracion con impresi<F3>n de una Colecci<F3>n de caracteres:\n");
+                                                  ^~~~                ~~~~
+main.c:39:54: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test agregar un elemento (15) a una Colecci<F3>n:\n");
+                                                                   ^~~~
+main.c:49:53: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test buscar un elemento (6) en una Colecci<F3>n\n");
+                                                                  ^~~~
+main.c:57:52: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test quitar un elemento (6) a una Colecci<F3>n:\n");
+                                                                 ^~~~
+main.c:80:49: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test colectar elementos en una colecci<F3>n (elevar al cuadrado):\n");
+                                                              ^~~~
+main.c:102:45: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test reducir a derecha una colecci<F3>n:\n");
+                                                          ^~~~
+main.c:111:47: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                printf("Test reducir a izquierda una colecci<F3>n (con valor inicial previo):\n");
+                                                            ^~~~
+10 warnings generated.
+```
+
+Prestar atencion a los warnings y corregirlos.
+
 ### Segunda entrega
 
 **Desaprobada**
