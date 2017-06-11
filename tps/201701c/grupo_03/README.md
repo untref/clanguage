@@ -8,7 +8,7 @@
 
 ## Entregas
 
-### Segunda entrega
+### Tercera entrega
 
 **Aprobada**
 
