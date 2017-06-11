@@ -11,6 +11,26 @@
 
 **Aprobado**
 
+No logro hacerlo funcionar.
+
+```
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000100001782 in nodo_imprimir_flotante (nodo=0x100200000) at Nodo.c:194
+194		printf("Dato de Nodo: %.2f\n", *dato_flotante);
+(gdb) bt
+#0  0x0000000100001782 in nodo_imprimir_flotante (nodo=0x100200000) at Nodo.c:194
+#1  0x0000000100000fd7 in coleccion_mostrar (coleccion=0x7fff5fbff448, doIt=0x100001760 <nodo_imprimir_flotante>) at Coleccion.c:162
+#2  0x000000010000243d in main (argc=1, argv=0x7fff5fbff7d8) at main.c:242
+(gdb) f 2
+#2  0x000000010000243d in main (argc=1, argv=0x7fff5fbff7d8) at main.c:242
+242	    coleccion_mostrar(&c, &nodo_imprimir_flotante);
+(gdb) quit
+```
+
+### Segunda entrega
+
+**Aprobado**
+
 Modificar los nombres de las primitivas para que coincidan con las del enunciado del TP.
 
 ### Primera entrega
