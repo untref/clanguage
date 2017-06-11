@@ -8,6 +8,22 @@
 
 ## Entregas
 
+### Tercera entrega
+
+**Desaprobado** 
+
+Tiene problemas de memoria.
+
+```
+8.800000
+11.000000
+---------------
+Test collection_filter :
+Segmentation fault: 11
+``` 
+
+Redefinir reducir a [derecha](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight?v=example) y a [izquierda](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce?v=example).
+
 ### Segunda entrega
 
 **Aprobado** 
