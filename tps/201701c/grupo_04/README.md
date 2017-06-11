@@ -13,7 +13,7 @@
 
 No han implementado la reducción.
 
-Redefinir reducir a (derecha)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight?v=example] y a (izquierda)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce?v=example].
+Redefinir reducir a [derecha](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight?v=example) y a [izquierda](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce?v=example).
 
 ### Segunda entrega
 
