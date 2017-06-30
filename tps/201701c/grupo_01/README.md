@@ -8,6 +8,13 @@
 
 ## Entregas
 
+### Cuarta entrega
+
+**Aprobado (9)** 
+
+- Hay ejemplos que no cuentan con el collection_free.
+
+
 ### Tercera entrega
 
 **Desaprobado** 
