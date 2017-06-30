@@ -1,4 +1,4 @@
-# Grupo 05
+# ~~Grupo 05~~
 
 ## Integrantes
 
