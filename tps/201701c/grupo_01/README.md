@@ -1,4 +1,4 @@
-# Grupo 01
+# ~~Grupo 01~~
 
 ## Integrantes
 
