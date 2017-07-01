@@ -6,6 +6,11 @@
 * NEVADO LUCAS
 ## Entregas
 
+### Cuarta entrega
+
+**Aprobado (8) **
+
+- La compilación tiene warnings
 ### Tercer entrega
 
 **Aprobado**
