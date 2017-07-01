@@ -5,19 +5,19 @@
 * ROCHA JORGE ANDRES
 * ABADIE IGNACIO JULIAN
 
-### Grupo 02
+### ~~Grupo 02~~
 
 * EUGENIO BATCH
 * ALAN ACHAVAL 
 * JULIAN ALFONZO
 
-### Grupo 03
+### ~~Grupo 03~~
 
 * Álvarez Felipe
 * Bosio Gabriel
 * ROMBOLA GUIDO IGNACIO
 
-### Grupo 04
+### ~~Grupo 04~~
 
 * GHIO NAHUEL SEBASTIÁN
 * NICOLLIER FEDERICO NUMAS
@@ -27,13 +27,13 @@
 * Guido Contreras
 * Teresa Alberto
 
-### Grupo 06
+### ~~Grupo 06~~
 
 * PIRRO LUCIANO ANDRES
 * FIORITO HERNAN DARIO
 * SANDE BERTUZZI FERNANDO HERNAN
 
-### Grupo 07
+### ~~Grupo 07~~
 
 * MARTINEZ SERVENTI DELFINA
 * NEVADO LUCAS
