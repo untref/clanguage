@@ -1,6 +1,6 @@
 ## Grupos
 
-### Grupo 01
+### ~~Grupo 01~~
 
 * ROCHA JORGE ANDRES
 * ABADIE IGNACIO JULIAN
@@ -22,7 +22,7 @@
 * GHIO NAHUEL SEBASTIÁN
 * NICOLLIER FEDERICO NUMAS
 
-### Grupo 05
+### ~~Grupo 05~~
 
 * Guido Contreras
 * Teresa Alberto
