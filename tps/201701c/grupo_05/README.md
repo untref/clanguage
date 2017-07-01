@@ -9,7 +9,7 @@
 
 ### Tercera entrega
 
-**Aprobado (7) **
+**Aprobado (10) **
 
 ### Tercera entrega
 
