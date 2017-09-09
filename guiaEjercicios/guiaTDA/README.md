@@ -220,3 +220,15 @@ Definir el TDA Variant que permita almacenar cualquier tipo de dato dentro de s�
 
 #endif // __VARIANT_H__
 ```
+
+### Ejercicio 5
+
+Definir un tda que represente un párrafo de texto de un editor el cuál permita las siguientes operaciones: 
+:
+1. Inicializar un párrafo vacio.
+2. Agregar una palabra a un párrafo.
+3. Reemplazar las ocurrencias de una palabra dentro de un párrafo por una alternativa.
+4. Eliminar las ocurrencias de una palabra en un párrafo.
+5. Duplicar un párrafo.
+6. Insertar un párrafo dentro de otro.
+7. Desplegar un párrafo.
