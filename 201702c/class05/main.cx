@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "nave.h"
+
+int main(int argc, char** argv) {
+    {   // Init con nombre
+        Nave miNave;
+        nave_init( &miNave, "xxxxx" );
+
+        printf("miNave.vidas: %u\n", miNave.vidas );
+        printf("miNave.nombre: %s\n", miNave.nombre  );
+
+        nave_release( &miNave );
+    }
+
+    {   // Init
+        Nave miNave;
+        nave_init( &miNave, 0x0 );
+
+        printf("miNave.vidas: %u\n", miNave.vidas );
+        printf("miNave.nombre: %s\n", miNave.nombre  );
+    }
+
+    printf("\n");
+
+    {   // Size of struct
+        Nave miNave;
+        printf("sizeof(miNave): %lu\n", sizeof(miNave) );
+    }
+
+}
+
