@@ -1,39 +1,7 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
-typedef struct _Palabra {
-    char* valor;
-} Palabra;
-
-Palabra* palabra_init(Palabra* this, const char* strPalabra) {
-    this->valor = malloc( sizeof(char) * (strlen(strPalabra) + 1));
-    strcpy(this->valor, strPalabra);
-
-    return this;
-};
-
-void palabra_release(Palabra* this) {
-    if ( this->valor ) {
-        free( this->valor );
-    }
-    this->valor = 0x0;
-};
-
-void palabra_imprimir(Palabra* this) {
-    printf("%s", this->valor);
-};
-
-Palabra* palabra_reemplazarCon(Palabra* this, const char* strPalabra) {
-    this->valor = realloc( this->valor, strlen(strPalabra) + 1);
-    strcpy(this->valor, strPalabra);
-
-    return this;
-};
-
-unsigned palabra_es_igual(Palabra* this, const char* strPalabra) {
-    return strcmp(this->valor, strPalabra);
-};
+#include "Palabra.h"
+#include "Parrafo.h"
 
 int main(int argc, char** argv) {
     { 
@@ -63,6 +31,31 @@ int main(int argc, char** argv) {
         palabra_init(&macri, "Macri");
         palabra_imprimir( palabra_reemplazarCon(&macri, "para la mano Macri") );
         
+    }
+
+    {
+        Parrafo p;
+
+        parrafo_init(&p);
+
+        parrafo_agregar_palabra(&p, "Macri ");
+        parrafo_agregar_palabra(&p, "para ");
+        parrafo_agregar_palabra(&p, "la ");
+        parrafo_agregar_palabra(&p, "mano ");
+        parrafo_agregar_palabra(&p, "Macri ");
+        parrafo_agregar_palabra(&p, ".");
+
+        parrafo_imprimir(&p);
+
+        parrafo_reemplazar_palabra_con(&p, "Macri ", "GATOOOOOOO ");
+
+        printf("\n");
+
+        parrafo_imprimir(&p);
+
+        printf("\n");
+
+        parrafo_release(&p);
     }
 
 }
